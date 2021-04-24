@@ -8,9 +8,10 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.Cookie;
 
 import static cloud.autotests.api.LogFilter.filters;
+import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
@@ -25,11 +26,25 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    @Tag("ui")
-    @Disabled("Example test code for further test development")
-    @DisplayName("Successful authorization to some demowebshop")
+    @Tag("ui web test")
+//    @Disabled("Example test code for further test development")
+    @DisplayName("Fill and submit the form")
     void loginTest() {
-        step("Open login page", () -> {
+        String respondButtonSelector = "Откликнуться";
+        String firstName = "Максим";
+        String firstNameSelector = "first_name";
+        String lastName = "Бессуднов";
+        String lastNameSelector = "last_name";
+        String email = "beslite@gmail.com";
+        String emailSelector = "email";
+        String phoneNumber = "+79263069330";
+        String phoneNumberSelector = "contact";
+        String about = "Здравствуйте!" + "/n" + "Опыт работы в качестве QA engineer 3 года." + "/n" + "Ссылки на портфолио в моем CV.";
+        String aboutSelector = "cover_letter";
+        String secondFilename = "CV_Bessudnov.pdf";
+        String secondFilenameSelector = "second_file";
+
+/*        step("Open login page", () -> {
             open("/login");
             $(".page-title").shouldHave(text("Welcome, Please Sign In!"));
         });
@@ -42,6 +57,37 @@ public class LoginTests extends TestBase {
 
         step("Verify successful authorization", () ->
                 $(".account").shouldHave(text(TestData.getUserLogin())));
+ */
+        open("https://job.playrix.com/open-positions/?vid=467");
+        step("Open fill form", () -> {
+            $(byText(respondButtonSelector)).click();
+        });
+
+        step("Type Firstname", () -> {
+            //$(byName(firstNameSelector)).shouldHave(text("Имя"));
+            $(byName(firstNameSelector)).setValue(firstName);
+        });
+
+        step("Type Lastname", () -> {
+            $(byName(lastNameSelector)).setValue(lastName);
+        });
+
+        step("Type email", () -> {
+            $(byName(emailSelector)).setValue(email);
+        });
+
+        step("Type contact phone number", () -> {
+            $(byName(phoneNumberSelector)).setValue(phoneNumber);
+        });
+
+        step("Type something about yourself", () -> {
+            $(byName(aboutSelector)).setValue(about);
+        });
+
+        step("Upload my CV", () -> {
+            //$(secondFilenameSelector).click();
+            $(byName(secondFilenameSelector)).uploadFromClasspath("cv/" + secondFilename);
+        });
     }
 
     @Test
