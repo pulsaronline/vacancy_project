@@ -7,15 +7,11 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.Cookie;
 
-import static cloud.autotests.api.LogFilter.filters;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static io.qameta.allure.Allure.step;
-import static io.restassured.RestAssured.given;
 
 @Story("Login tests")
 public class LoginTests extends TestBase {
@@ -31,7 +27,7 @@ public class LoginTests extends TestBase {
     @Tag("ui web test - fill the form")
 //    @Disabled("Example test code for further test development")
     @DisplayName("Fill and submit the form")
-    void loginTest() {
+    void fillAndCheckFormTest() {
          String respondButtonSelector = "Откликнуться";
          String firstName = "Максим",
                 firstNameSelector = "first_name";
@@ -47,27 +43,9 @@ public class LoginTests extends TestBase {
          String secondFilename = "CV_Bessudnov.pdf",
                 secondFilenameSelector = "second_file";
 
-/*        step("Open login page", () -> {
-            open("/login");
-            $(".page-title").shouldHave(text("Welcome, Please Sign In!"));
-        });
+        step("Open target page", () -> open("https://job.playrix.com/open-positions/?vid=467"));
 
-        step("Fill in login form", () -> {
-            $("#Email").val(TestData.getUserLogin());
-            $("#Password").val(TestData.getUserPassword())
-                    .pressEnter();
-        });
-
-        step("Verify successful authorization", () ->
-                $(".account").shouldHave(text(TestData.getUserLogin())));
- */
-        step("Open target page", () -> {
-            open("https://job.playrix.com/open-positions/?vid=467");
-        });
-
-        step("Open fill form", () -> {
-            $(byText(respondButtonSelector)).click();
-        });
+        step("Open the form", () -> $(byText(respondButtonSelector)).click());
 
         step("Type Firstname", () -> {
             //$(byName(firstNameSelector)).shouldHave(text("Имя"));
@@ -109,13 +87,9 @@ public class LoginTests extends TestBase {
     @Test
     @Owner("MaksimBessudnov")
     @Tag("ui web test - check some form elements")
-//    @Disabled("Example test code for further test development")
-//    @DisplayName("Successful authorization with set cookie, received by API")
     @DisplayName("Check items on the page")
-    void loginWithCookieTest() {
-        step("Open target page", () -> {
-        open("https://job.playrix.com/open-positions/?vid=467");
-        });
+    void uiWebTest() {
+        step("Open target page", () -> open("https://job.playrix.com/open-positions/?vid=467"));
 
         step("Check the company logo", () -> {
             $(".navbar-brand").should(exist);
@@ -131,36 +105,5 @@ public class LoginTests extends TestBase {
                     text("О компании"),
                     text("FAQ"));
         });
-/*        step("Get cookie by api and set it to browser", () -> {
-            String authorizationCookie =
-                    given()
-                            .filter(filters().withCustomTemplates())
-                            .log().uri()
-                            .contentType("application/x-www-form-urlencoded; charset=UTF-8")
-                            .formParam("Email", TestData.getUserLogin())
-                            .formParam("Password", TestData.getUserPassword())
-                    .when()
-                            .post("/login")
-                    .then()
-                            .statusCode(302)
-                            .log().body()
-                            .extract()
-                            .cookie("NOPCOMMERCE.AUTH");
-
-            step("Open minimal content, because cookie can be set with site opened", () ->
-                    open("/Themes/DefaultClean/Content/images/logo.png"));
-
-            getWebDriver().manage().addCookie(new Cookie("NOPCOMMERCE.AUTH", authorizationCookie));
-        });
-
-        step("Open main page", () -> {
-            open("");
-            $(".topic-html-content-header").shouldHave(text("Welcome to our store"));
-        });
-
-        step("Verify successful authorization", () ->
-                $(".account").shouldHave(text(TestData.getUserLogin())));
-    }
-*/
     }
 }
