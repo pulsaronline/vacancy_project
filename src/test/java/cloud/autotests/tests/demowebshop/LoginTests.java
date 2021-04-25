@@ -128,11 +128,6 @@ public class LoginTests extends TestBase {
                     text("О компании"),
                     text("FAQ"));
         });
-
-        step("Check the company logo", () -> {
-            $(".topmenulink").should(exist);
-            $(".topmenulink").shouldBe(Condition.visible).shouldHave(text("Главная"));
-        });
 /*        step("Get cookie by api and set it to browser", () -> {
             String authorizationCookie =
                     given()
