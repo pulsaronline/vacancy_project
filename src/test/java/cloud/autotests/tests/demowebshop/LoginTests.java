@@ -3,6 +3,7 @@ package cloud.autotests.tests.demowebshop;
 import cloud.autotests.tests.TestBase;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.*;
@@ -26,6 +27,7 @@ public class LoginTests extends TestBase {
     }
 
     @Test
+    @Owner("MaksimBessudnov")
     @Tag("ui web test - fill the form")
 //    @Disabled("Example test code for further test development")
     @DisplayName("Fill and submit the form")
@@ -105,6 +107,7 @@ public class LoginTests extends TestBase {
     }
 
     @Test
+    @Owner("MaksimBessudnov")
     @Tag("ui web test - check some form elements")
 //    @Disabled("Example test code for further test development")
 //    @DisplayName("Successful authorization with set cookie, received by API")
