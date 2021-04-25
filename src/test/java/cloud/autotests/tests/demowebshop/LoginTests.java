@@ -59,7 +59,10 @@ public class LoginTests extends TestBase {
         step("Verify successful authorization", () ->
                 $(".account").shouldHave(text(TestData.getUserLogin())));
  */
-        open("https://job.playrix.com/open-positions/?vid=467");
+        step("Open target page", () -> {
+            open("https://job.playrix.com/open-positions/?vid=467");
+        });
+
         step("Open fill form", () -> {
             $(byText(respondButtonSelector)).click();
         });
@@ -107,11 +110,15 @@ public class LoginTests extends TestBase {
 //    @DisplayName("Successful authorization with set cookie, received by API")
     @DisplayName("Check items on the page")
     void loginWithCookieTest() {
+        step("Open target page", () -> {
         open("https://job.playrix.com/open-positions/?vid=467");
+        });
+
         step("Check the company logo", () -> {
             $(".navbar-brand").should(exist);
             $(".navbar-brand").shouldBe(Condition.visible);
         });
+
         step("Check the top menu", () -> {
             $("#navbar-ex1-collapse").should(exist);
             $("#navbar-ex1-collapse").shouldBe(Condition.visible).shouldHave(
@@ -121,6 +128,7 @@ public class LoginTests extends TestBase {
                     text("О компании"),
                     text("FAQ"));
         });
+
         step("Check the company logo", () -> {
             $(".topmenulink").should(exist);
             $(".topmenulink").shouldBe(Condition.visible).shouldHave(text("Главная"));
