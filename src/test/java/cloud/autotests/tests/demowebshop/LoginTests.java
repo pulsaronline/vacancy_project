@@ -1,6 +1,7 @@
 package cloud.autotests.tests.demowebshop;
 
 import cloud.autotests.tests.TestBase;
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
@@ -8,8 +9,7 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.Cookie;
 
 import static cloud.autotests.api.LogFilter.filters;
-import static com.codeborne.selenide.Condition.exactText;
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
@@ -26,23 +26,24 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    @Tag("ui web test")
+    @Tag("ui web test - fill the form")
 //    @Disabled("Example test code for further test development")
     @DisplayName("Fill and submit the form")
     void loginTest() {
-        String respondButtonSelector = "Откликнуться";
-        String firstName = "Максим";
-        String firstNameSelector = "first_name";
-        String lastName = "Бессуднов";
-        String lastNameSelector = "last_name";
-        String email = "beslite@gmail.com";
-        String emailSelector = "email";
-        String phoneNumber = "+79263069330";
-        String phoneNumberSelector = "contact";
-        String about = "Здравствуйте!" + "/n" + "Опыт работы в качестве QA engineer 3 года." + "/n" + "Ссылки на портфолио в моем CV.";
-        String aboutSelector = "cover_letter";
-        String secondFilename = "CV_Bessudnov.pdf";
-        String secondFilenameSelector = "second_file";
+         String respondButtonSelector = "Откликнуться";
+         String firstName = "Максим",
+                firstNameSelector = "first_name";
+         String lastName = "Бессуднов",
+                lastNameSelector = "last_name";
+         String email = "beslite@gmail.com",
+                emailSelector = "email";
+         String phoneNumber = "+79263069330",
+                phoneNumberSelector = "contact";
+         String about = "Здравствуйте! Опыт работы в качестве QA engineer 3 года. Ссылки на портфолио в моем CV.",
+                aboutSelector = "cover_letter";
+         String checkboxSelector = "#js-agree";
+         String secondFilename = "CV_Bessudnov.pdf",
+                secondFilenameSelector = "second_file";
 
 /*        step("Open login page", () -> {
             open("/login");
@@ -58,7 +59,7 @@ public class LoginTests extends TestBase {
         step("Verify successful authorization", () ->
                 $(".account").shouldHave(text(TestData.getUserLogin())));
  */
-        open("https://job.playrix.com/open-positions/?vid=467");
+//        open("https://job.playrix.com/open-positions/?vid=467");
         step("Open fill form", () -> {
             $(byText(respondButtonSelector)).click();
         });
@@ -66,36 +67,68 @@ public class LoginTests extends TestBase {
         step("Type Firstname", () -> {
             //$(byName(firstNameSelector)).shouldHave(text("Имя"));
             $(byName(firstNameSelector)).setValue(firstName);
+            $(byName(firstNameSelector)).shouldBe(visible);
         });
 
         step("Type Lastname", () -> {
             $(byName(lastNameSelector)).setValue(lastName);
+            $(byName(lastNameSelector)).shouldBe(visible);
+
         });
 
         step("Type email", () -> {
             $(byName(emailSelector)).setValue(email);
+            $(byName(emailSelector)).shouldBe(visible);
         });
 
         step("Type contact phone number", () -> {
             $(byName(phoneNumberSelector)).setValue(phoneNumber);
+            $(byName(phoneNumberSelector)).shouldBe(visible);
         });
 
         step("Type something about yourself", () -> {
             $(byName(aboutSelector)).setValue(about);
+            $(byName(aboutSelector)).shouldBe(visible);
+        });
+        step("Type something about yourself", () -> {
+            $(byName(aboutSelector)).setValue(about);
+            $(byName(aboutSelector)).shouldBe(visible);
+        });
+        step("Type something about yourself", () -> {
+            $(checkboxSelector).click();
+            $(checkboxSelector).shouldBe(visible);
         });
 
         step("Upload my CV", () -> {
-            //$(secondFilenameSelector).click();
             $(byName(secondFilenameSelector)).uploadFromClasspath("cv/" + secondFilename);
         });
     }
 
     @Test
-    @Tag("api")
-    @Disabled("Example test code for further test development")
-    @DisplayName("Successful authorization with set cookie, received by API")
+    @Tag("ui web test - check some form elements")
+//    @Disabled("Example test code for further test development")
+//    @DisplayName("Successful authorization with set cookie, received by API")
+    @DisplayName("Check items on the page")
     void loginWithCookieTest() {
-        step("Get cookie by api and set it to browser", () -> {
+//        open("https://job.playrix.com/open-positions/?vid=467");
+        step("Check the company logo", () -> {
+            $(".navbar-brand").should(exist);
+            $(".navbar-brand").shouldBe(Condition.visible);
+        });
+        step("Check the top menu", () -> {
+            $("#navbar-ex1-collapse").should(exist);
+            $("#navbar-ex1-collapse").shouldBe(Condition.visible).shouldHave(
+                    text("Главная"),
+                    text("Вакансии"),
+                    text("Курсы"),
+                    text("О компании"),
+                    text("FAQ"));
+        });
+        step("Check the company logo", () -> {
+            $(".topmenulink").should(exist);
+            $(".topmenulink").shouldBe(Condition.visible).shouldHave(text("Главная"));
+        });
+/*        step("Get cookie by api and set it to browser", () -> {
             String authorizationCookie =
                     given()
                             .filter(filters().withCustomTemplates())
@@ -124,5 +157,7 @@ public class LoginTests extends TestBase {
 
         step("Verify successful authorization", () ->
                 $(".account").shouldHave(text(TestData.getUserLogin())));
+    }
+*/
     }
 }
