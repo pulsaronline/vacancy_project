@@ -90,11 +90,8 @@ public class LoginTests extends TestBase {
             $(byName(aboutSelector)).setValue(about);
             $(byName(aboutSelector)).shouldBe(visible);
         });
-        step("Type something about yourself", () -> {
-            $(byName(aboutSelector)).setValue(about);
-            $(byName(aboutSelector)).shouldBe(visible);
-        });
-        step("Type something about yourself", () -> {
+
+        step("Press agreement checkbox", () -> {
             $(checkboxSelector).click();
             $(checkboxSelector).shouldBe(visible);
         });
