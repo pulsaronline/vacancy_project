@@ -2,6 +2,7 @@
 https://playrix.ru
 
 # Используемые технологии
+![IntelliJ Idea](readme_files/icons/Idea.png)
 ![Java](readme_files/icons/Java.png)
 ![Gradle](readme_files/icons/Gradle.png)
 ![JUnit5](readme_files/icons/JUnit5.png)
@@ -11,6 +12,7 @@ https://playrix.ru
 ![Selenoid](readme_files/icons/Selenoid.png)
 ![Telegram](readme_files/icons/Telegram.png)
 
+- BDE IntelliJ Idea
 - Java, Gradle
 - Junit5, Selenide
 - Allure
