@@ -41,8 +41,6 @@ https://playrix.ru
 ![Telegram](./readme_files/TelegramReport.png)
 
 ## Ссылки
-### Репозиторий GitHub
-https://github.com/pulsaronline/vacancy_project.git
 ### Jenkins job
 https://jenkins.autotests.cloud/job/c05-mBessudnov-lesson11-CV/16/
 ### Allure reports
