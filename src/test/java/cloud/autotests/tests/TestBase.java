@@ -26,7 +26,6 @@ public class TestBase {
         attachAsText("Browser console logs", getConsoleLogs());
 
         closeWebDriver();
-
         if (isVideoOn()) attachVideo(sessionId);
     }
 }

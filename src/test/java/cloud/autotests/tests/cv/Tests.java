@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-@Story("Login tests")
+@Story("playrix.com tests")
 public class Tests extends TestBase {
 
     @BeforeAll
@@ -24,9 +24,8 @@ public class Tests extends TestBase {
 
     @Test
     @Owner("MaksimBessudnov")
-    @Tag("ui web test - fill the form")
-//    @Disabled("Example test code for further test development")
-    @DisplayName("Fill and submit the form")
+    @Tag("ui")
+    @DisplayName("UI test: Fill and submit the form")
     void fillAndCheckFormTest() {
          String respondButtonSelector = "Откликнуться";
          String firstName = "Максим",
@@ -86,8 +85,8 @@ public class Tests extends TestBase {
 
     @Test
     @Owner("MaksimBessudnov")
-    @Tag("ui web test - check some form elements")
-    @DisplayName("Check items on the page")
+    @Tag("ui")
+    @DisplayName("UI test: Check items on the page")
     void uiWebTest() {
         step("Open target page", () -> open("https://job.playrix.com/open-positions/?vid=467"));
 
@@ -105,5 +104,14 @@ public class Tests extends TestBase {
                     text("О компании"),
                     text("FAQ"));
         });
+    }
+
+    @Test
+    @Owner("MaksimBessudnov")
+    @Tag("api")
+    //@Disabled("Example test code for further test development")
+    @DisplayName("API test: _______ playrix.com")
+    void apiWebTest() {
+        // TODO: implement any API test
     }
 }
