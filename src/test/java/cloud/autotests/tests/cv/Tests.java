@@ -1,4 +1,4 @@
-package cloud.autotests.tests.demowebshop;
+package cloud.autotests.tests.cv;
 
 import cloud.autotests.tests.TestBase;
 import com.codeborne.selenide.Condition;
@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Story("Login tests")
-public class LoginTests extends TestBase {
+public class Tests extends TestBase {
 
     @BeforeAll
     static void configureBaseUrl() {

@@ -1,7 +1,7 @@
-# Проект отправки резюме работодателю Playrix.ru
+# Выборочный автотест ресурса Playrix.ru
 https://playrix.ru
 
-# Используемые технологии
+# Использованы технологии:
 ![IntelliJ Idea](readme_files/icons/Idea.png)
 ![Java](readme_files/icons/Java.png)
 ![Gradle](readme_files/icons/Gradle.png)
@@ -12,7 +12,7 @@ https://playrix.ru
 ![Selenoid](readme_files/icons/Selenoid.png)
 ![Telegram](readme_files/icons/Telegram.png)
 
-- BDE IntelliJ Idea
+- IDE IntelliJ Idea
 - Java, Gradle
 - Junit5, Selenide
 - Allure
@@ -20,13 +20,13 @@ https://playrix.ru
 - Selenoid
 - Telegram Bot
 
-# Описание
-Тестирование UI элементов веб страницы.
+# Описание сборки:
+Тестируются UI элементы веб страницы.
 
-- Автоматизированный запуск тестов из Jenkins
-- Для кросс-браузерного тестирования используем Selenoid
-- Отчет о пройденных тестах генерируется Allure, добавляем логи,скриншоты браузера, видео прохождения тестов
-- Отправляем отчет тест-сессии в Telegram
+- Автоматизирован запуск тестов из Jenkins
+- Для кросс-браузерного тестирования использован Selenoid
+- Отчет о пройденных тестах генерируется Allure, добавляются логи,скриншоты браузера, видео прохождения тестов
+- Отправляется отчет тест-сессии в Telegram
 
 ## Отчеты Allure reports
 ### Jenkins сборка
