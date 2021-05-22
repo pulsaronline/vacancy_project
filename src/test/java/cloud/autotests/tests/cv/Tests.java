@@ -4,6 +4,7 @@ import cloud.autotests.tests.TestBase;
 import cloud.autotests.tests.cv.pages.CvPage;
 import cloud.autotests.tests.cv.pages.MainPage;
 
+import cloud.autotests.tests.cv.pages.VacancyPage;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
@@ -13,6 +14,30 @@ import static io.qameta.allure.Allure.step;
 @Story("job.playrix.com tests")
 public class Tests extends TestBase {
 
+    @Test
+    @Owner("MaksimBessudnov")
+    @Tag("ui")
+    @DisplayName("UI test: Check items on the main page")
+    void mainPageTest() {
+        step("Open main page", MainPage::openMainPage);
+        step("Check the company logo", MainPage::checkTheLogo);
+        step("Check the top menu", MainPage::checkTopMenu);
+        step("Check the respond button", MainPage::checkDefaultButton);
+        step("Check the bottom menu", MainPage::checkBottomMenu);
+        step("Check the social buttons", MainPage::checkSocialButtons);
+    }
+
+    @Test
+    @Owner("MaksimBessudnov")
+    @Tag("ui")
+    @DisplayName("UI test: Check items on the vacancies page")
+    void vacancyPageTest() {
+        step("Open vacancy page", VacancyPage::openVacancyPage);
+        step("Check the company logo", MainPage::checkTheLogo);
+        step("Check the top menu", MainPage::checkTopMenu);
+        step("Check the bottom menu", MainPage::checkBottomMenu);
+
+    }
 
     @Test
     @Owner("MaksimBessudnov")
@@ -27,22 +52,10 @@ public class Tests extends TestBase {
         step("Type something about yourself", CvPage::typeAbout);
         step("Press agreement checkbox", CvPage::pressAgreementCheckbox);
         step("Upload my CV", CvPage::uploadCV);
-        step("Check the company logo", CvPage::checkTheLogo);
-        step("Check the top menu", CvPage::checkTopMenu);
-        step("Submit and send the form", CvPage::submitTheForm);
-    }
-
-    @Test
-    @Owner("MaksimBessudnov")
-    @Tag("ui")
-    @DisplayName("UI test: Check items on the main page")
-    void mainPageTest() {
-        step("Open main page", MainPage::openMainPage);
-        step("Check the company logo", CvPage::checkTheLogo);
-        step("Check the top menu", CvPage::checkTopMenu);
-        step("Check the respond button", MainPage::checkDefaultButton);
+        step("Check the company logo", MainPage::checkTheLogo);
+        step("Check the top menu", MainPage::checkTopMenu);
         step("Check the bottom menu", MainPage::checkBottomMenu);
-        step("Check the social buttons", MainPage::checkSocialButtons);
+        step("Submit and send the form", CvPage::submitTheForm);
     }
 
     @Test

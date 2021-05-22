@@ -12,14 +12,39 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage {
     static String defaultButtonSelector = "Перейти к вакансиям";
+    static String headerMenuSelector = ".navbar-brand";
+    static String bottomMenuSelector = ".logo_footer";
+    static String navbarSelector = "#navbar-ex1-collapse";
+    static String linksMenuSelector = ".links";
+    static String fbSelector = ".facebook";
+    static String vkSelector = ".vk";
+    static String youTubeSelector = ".youtube";
+    static String instagramSelector = ".instagram";
+    static String linkedinSelector =  ".linkedin";
+    static String twitterSelector = ".twitter";
 
     public static void openMainPage(){
         open(BASEURL);
     }
 
+    public static void checkTheLogo() {
+        $(headerMenuSelector).should(exist).shouldBe(Condition.visible);
+        $(bottomMenuSelector).should(exist).shouldBe(Condition.visible);
+    }
+
+    public static void checkTopMenu(){
+        $(navbarSelector).should(exist).shouldBe(Condition.visible)
+                .shouldHave(
+                text("Главная"),
+                text("Вакансии"),
+                text("Курсы"),
+                text("О компании"),
+                text("FAQ"));
+    }
+
     public static void checkBottomMenu(){
-        $(".links").should(exist);
-        $(".links").shouldBe(Condition.visible).shouldHave(
+        $(linksMenuSelector).should(exist).shouldBe(Condition.visible)
+                .shouldHave(
                 text("ИГРЫ"),
                 text("ПОМОЩЬ"),
                 text("КОМПАНИЯ"),
@@ -27,20 +52,15 @@ public class MainPage {
     }
 
     public static void checkSocialButtons(){
-        $(".facebook").should(exist);
-        $(".facebook").shouldBe(Condition.visible);
-        $(".vk").should(exist);
-        $(".vk").shouldBe(Condition.visible);
-        $(".youtube").should(exist);
-        $(".youtube").shouldBe(Condition.visible);
-        $(".instagram").should(exist);
-        $(".instagram").shouldBe(Condition.visible);
-        $(".linkedin").should(exist);
-        $(".linkedin").shouldBe(Condition.visible);
-        $(".twitter").should(exist);
-        $(".twitter").shouldBe(Condition.visible);
+        $(fbSelector).should(exist).shouldBe(Condition.visible);
+        $(vkSelector).should(exist).shouldBe(Condition.visible);
+        $(youTubeSelector).should(exist).shouldBe(Condition.visible);
+        $(instagramSelector).should(exist).shouldBe(Condition.visible);
+        $(linkedinSelector).should(exist).shouldBe(Condition.visible);
+        $(twitterSelector).should(exist).shouldBe(Condition.visible);
     }
+
     public static void checkDefaultButton(){
-        $(byText(MainPage.defaultButtonSelector)).click();
+        $(byText(defaultButtonSelector)).click();
     }
 }

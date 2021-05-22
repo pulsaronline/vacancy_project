@@ -1,10 +1,7 @@
 package cloud.autotests.tests.cv.pages;
 
-import com.codeborne.selenide.Condition;
-
 import static cloud.autotests.tests.TestBase.BASEURL;
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -68,21 +65,6 @@ public class CvPage {
 
     public static void uploadCV(){
         $(byName(secondFilenameSelector)).uploadFromClasspath("cv/" + secondFilename);
-    }
-
-    public static void checkTheLogo() {
-        $(".navbar-brand").should(exist);
-        $(".navbar-brand").shouldBe(Condition.visible);
-    }
-
-    public static void checkTopMenu(){
-        $("#navbar-ex1-collapse").should(exist);
-        $("#navbar-ex1-collapse").shouldBe(Condition.visible).shouldHave(
-                text("Главная"),
-                text("Вакансии"),
-                text("Курсы"),
-                text("О компании"),
-                text("FAQ"));
     }
 
     public static void submitTheForm(){
