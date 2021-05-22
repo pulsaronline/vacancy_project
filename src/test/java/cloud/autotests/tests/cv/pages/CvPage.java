@@ -27,7 +27,7 @@ public class CvPage {
             secondFilenameSelector = "second_file";
     static String submitButtonSelector = "#js-apply";
 
-    public static void openTargetVacancyPage(){
+    public static void openCvPage(){
         //open("https://job.playrix.com/");
         open(BASEURL);
         $(byText("Перейти к вакансиям")).click();
