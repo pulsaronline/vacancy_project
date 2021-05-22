@@ -33,7 +33,7 @@ public class CvPage {
     }
 
     public static void openPageForm(){
-        $(byText(CvPage.respondButtonSelector)).click();
+        $(byText(respondButtonSelector)).click();
     }
 
     public static void typeNames(){
