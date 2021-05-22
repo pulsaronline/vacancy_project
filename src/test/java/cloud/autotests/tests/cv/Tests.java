@@ -49,7 +49,7 @@ public class Tests extends TestBase {
         step("Type First and Last names", CvPage::typeNames);
         step("Type email", CvPage::typeEmail);
         step("Type contact phone number", CvPage::typePhoneNumber);
-        step("Type something about yourself", CvPage::typeAbout);
+        step("Type something about myself", CvPage::typeAbout);
         step("Press agreement checkbox", CvPage::pressAgreementCheckbox);
         step("Upload my CV", CvPage::uploadCV);
         step("Check the company logo", MainPage::checkTheLogo);
@@ -61,7 +61,7 @@ public class Tests extends TestBase {
     @Test
     @Owner("MaksimBessudnov")
     @Tag("api")
-    //@Disabled("Example test code for further test development")
+    @Disabled("Example test code for further test development")
     @DisplayName("API test: _______ playrix.com")
     void apiWebTest() {
         // TODO: implement any API test
