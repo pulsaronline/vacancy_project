@@ -18,7 +18,7 @@ public class Tests extends TestBase {
     @Owner("MaksimBessudnov")
     @Tag("ui")
     @DisplayName("UI test: Check items on the main page")
-    void mainPageTest() {
+    void mainPageUITest() {
         step("Open main page", MainPage::openMainPage);
         step("Check the company logo", MainPage::checkTheLogo);
         step("Check the top menu", MainPage::checkTopMenu);
@@ -31,7 +31,7 @@ public class Tests extends TestBase {
     @Owner("MaksimBessudnov")
     @Tag("ui")
     @DisplayName("UI test: Check items on the vacancies page")
-    void vacancyPageTest() {
+    void vacancyPageUITest() {
         step("Open vacancy page", VacancyPage::openVacancyPage);
         step("Check the company logo", MainPage::checkTheLogo);
         step("Check the top menu", MainPage::checkTopMenu);
@@ -43,7 +43,7 @@ public class Tests extends TestBase {
     @Owner("MaksimBessudnov")
     @Tag("ui")
     @DisplayName("UI test: Fill, check and submit the target vacancy form")
-    void cvPageFillAndCheckTest() {
+    void cvPageFillAndCheckUITest() {
         step("Open target page", CvPage::openCvPage);
         step("Open the form", CvPage::openPageForm);
         step("Type First and Last names", CvPage::typeNames);
