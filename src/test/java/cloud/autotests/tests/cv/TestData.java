@@ -1,6 +1,6 @@
 package cloud.autotests.tests.cv;
 
-import cloud.autotests.config.demowebshop.TestDataConfig;
+import cloud.autotests.config.cv_config.TestDataConfig;
 import org.aeonbits.owner.ConfigFactory;
 
 public class TestData {

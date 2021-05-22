@@ -1,33 +1,26 @@
 package cloud.autotests.tests.cv;
 
 import cloud.autotests.tests.TestBase;
+import cloud.autotests.tests.cv.pages.CvPage;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
-import io.restassured.RestAssured;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-@Story("playrix.com tests")
+@Story("job.playrix.com tests")
 public class Tests extends TestBase {
 
-    @BeforeAll
-    static void configureBaseUrl() {
-        RestAssured.baseURI = TestData.getApiUrl();
-        Configuration.baseUrl = TestData.getWebUrl();
-    }
 
     @Test
     @Owner("MaksimBessudnov")
     @Tag("ui")
-    @DisplayName("UI test: Fill and submit the form")
-    void fillAndCheckFormTest() {
-         String respondButtonSelector = "Откликнуться";
+    @DisplayName("UI test: Fill, check and submit the target vacancy form")
+    void cvPageFillAndTest() {
+         /*String respondButtonSelector = "Откликнуться";
          String firstName = "Максим",
                 firstNameSelector = "first_name";
          String lastName = "Бессуднов",
@@ -40,14 +33,24 @@ public class Tests extends TestBase {
                 aboutSelector = "cover_letter";
          String checkboxSelector = "#js-agree";
          String secondFilename = "CV_Bessudnov.pdf",
-                secondFilenameSelector = "second_file";
+                secondFilenameSelector = "second_file";*/
 
-        step("Open target page", () -> open("https://job.playrix.com/open-positions/?vid=467"));
+//        step("Open target page", () -> open("https://job.playrix.com/open-positions/?vid=467"));
+        step("Open target page", CvPage::openTargetVacancyPage);
+        step("Open the form", CvPage::openPageForm);
+        step("Type First and Last names", CvPage::typeNames);
+        step("Type email", CvPage::typeEmail);
+        step("Type contact phone number", CvPage::typePhoneNumber);
+        step("Type something about yourself", CvPage::typeAbout);
+        step("Press agreement checkbox", CvPage::pressAgreementCheckbox);
+        step("Upload my CV", CvPage::uploadCV);
+        step("Check the company logo", CvPage::checkTheLogo);
+        step("Check the top menu", CvPage::checkTopMenu);
+        step("Submit and send the form", CvPage::submitTheForm);
 
-        step("Open the form", () -> $(byText(respondButtonSelector)).click());
+        /*step("Open the form", () -> $(byText(respondButtonSelector)).click());
 
         step("Type Firstname", () -> {
-            //$(byName(firstNameSelector)).shouldHave(text("Имя"));
             $(byName(firstNameSelector)).setValue(firstName);
             $(byName(firstNameSelector)).shouldBe(visible);
         });
@@ -80,14 +83,14 @@ public class Tests extends TestBase {
 
         step("Upload my CV", () -> {
             $(byName(secondFilenameSelector)).uploadFromClasspath("cv/" + secondFilename);
-        });
+        });*/
     }
 
     @Test
     @Owner("MaksimBessudnov")
     @Tag("ui")
     @DisplayName("UI test: Check items on the page")
-    void uiWebTest() {
+    void mainPageTest() {
         step("Open target page", () -> open("https://job.playrix.com/open-positions/?vid=467"));
 
         step("Check the company logo", () -> {
