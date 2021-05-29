@@ -22,8 +22,9 @@ public class Tests extends TestBase {
         step("Open main page", MainPage::openMainPage);
         step("Check the company logo", MainPage::checkTheLogo);
         step("Check the top menu", MainPage::checkTopMenu);
-        step("Check the respond button", MainPage::checkDefaultButton);
-        step("Check the bottom menu", MainPage::checkBottomMenu);
+        step("Check the top menu submenus", MainPage::checkTopMenuSubmenus);
+        step("Check the header images", MainPage::checkHeaderImages);
+        step("Check footer menu", MainPage::checkFooterMenu);
         step("Check the social buttons", MainPage::checkSocialButtons);
     }
 
@@ -35,8 +36,8 @@ public class Tests extends TestBase {
         step("Open vacancy page", VacancyPage::openVacancyPage);
         step("Check the company logo", MainPage::checkTheLogo);
         step("Check the top menu", MainPage::checkTopMenu);
-        step("Check the bottom menu", MainPage::checkBottomMenu);
-        step("Check the bottom menu", VacancyPage::vacanciesCheck);
+        step("Check footer menu", MainPage::checkFooterMenu);
+        step("Check footer menu", VacancyPage::vacanciesCheck);
     }
 
     @Test
@@ -54,7 +55,7 @@ public class Tests extends TestBase {
         step("Upload my CV", CvPage::uploadCV);
         step("Check the company logo", MainPage::checkTheLogo);
         step("Check the top menu", MainPage::checkTopMenu);
-        step("Check the bottom menu", MainPage::checkBottomMenu);
+        step("Check footer menu", MainPage::checkFooterMenu);
         step("Submit and send the form", CvPage::submitTheForm);
     }
 
