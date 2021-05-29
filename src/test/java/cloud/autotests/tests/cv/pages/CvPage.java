@@ -8,21 +8,22 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class CvPage {
-    static String respondButtonSelector = "Откликнуться";
-    static String firstName = "Максим",
-            firstNameSelector = "first_name";
-    static String lastName = "Бессуднов",
-            lastNameSelector = "last_name";
-    static String email = "beslite@gmail.com",
-            emailSelector = "email";
-    static String phoneNumber = "+79263069330",
-            phoneNumberSelector = "contact";
-    static String about = "Здравствуйте! Опыт работы в качестве QA engineer 3 года. Ссылки на портфолио в моем CV.",
-            aboutSelector = "cover_letter";
-    static String checkboxSelector = "#js-agree";
-    static String secondFilename = "CV_Bessudnov.pdf",
-            secondFilenameSelector = "second_file";
-    static String submitButtonSelector = "#js-apply";
+    static String
+            respondButtonSelector = "Откликнуться",
+            firstName = "Максим",
+            firstNameSelector = "first_name",
+            lastName = "Бессуднов",
+            lastNameSelector = "last_name",
+            email = "beslite@gmail.com",
+            emailSelector = "email",
+            phoneNumber = "+79263069330",
+            phoneNumberSelector = "contact",
+            about = "Здравствуйте! Опыт работы в качестве QA engineer 3 года. Ссылки на портфолио в моем CV.",
+            aboutSelector = "cover_letter",
+            checkboxSelector = "#js-agree",
+            secondFilename = "CV_Bessudnov.pdf",
+            secondFilenameSelector = "second_file",
+            submitButtonSelector = "#js-apply";
 
     public static void openCvPage(){
         //open("https://job.playrix.com/");

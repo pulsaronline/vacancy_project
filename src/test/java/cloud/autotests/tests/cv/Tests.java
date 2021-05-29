@@ -36,7 +36,7 @@ public class Tests extends TestBase {
         step("Check the company logo", MainPage::checkTheLogo);
         step("Check the top menu", MainPage::checkTopMenu);
         step("Check the bottom menu", MainPage::checkBottomMenu);
-
+        step("Check the bottom menu", VacancyPage::vacanciesCheck);
     }
 
     @Test
