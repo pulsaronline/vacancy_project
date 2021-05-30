@@ -14,7 +14,7 @@ import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
-    public static final String BASEURL = "https://job.playrix.com/";
+    public static String BASEURL = "https://playrix.com/games";
 
     @BeforeAll
     static void setUp() {

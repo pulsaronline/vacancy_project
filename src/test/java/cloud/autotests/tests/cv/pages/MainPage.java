@@ -1,6 +1,8 @@
 package cloud.autotests.tests.cv.pages;
 
+import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
@@ -11,90 +13,119 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
-    static String
-            //top menu locators
-            gamesTopMenuName = "Игры",
-            companyTopMenuName = "Компания",
-            carrierTopMenuName = "Карьера",
-            historySubMenuName = "История",
-            vacanciesSubMenuName = "Вакансии",
-            topMenuSelector =".main-menu__link",
-            topMenuSearchSelector =".main-menu__search-icon--hover",
-            topSubmenuSelector = ".main-menu__sub-item",
-            headerMenuSelector = ".header__logo-img",
-            headerMenuImagesSelector = ".games-page__header-images--gradient",
-            navbarSelector = ".header__menu.main-menu",
-            //bottom menu locators
-            linksMenuSelector = ".footer__link-gallery",
-            footerSocialSelector = ".footer__social-link",
+    public static String
+            //header menu locators and values
+            headerGamesMenuName = "Игры",
+            headerCompanyMenuName = "Компания",
+            headerCarrierMenuName = "Карьера",
+            headerLocaleMenuName = "EN",
+            headerHistorySubMenuName = "История",
+            headerVacanciesSubMenuName = "Вакансии",
+            headerMenuSelector =".main-menu__link",
+            headerMenuSearchSelector =".main-menu__search-icon--hover",
+            headerSubmenuSelector = ".main-menu__sub-item",
+            headerLogoMenuSelector = ".header__logo-img",
+            headerMenuGradientImageSelector = ".games-page__header-images--gradient",
+            headerMenuGradientImageValue = "https://playrix.com/f/img/ui/game/header/gradient_static.png",
+            headerMenuMMImageSelector = ".games-page__header-images--MM",
+            headerMenuMMImageValue = "https://playrix.com/f/img/ui/game/header/MM.png",
+            headerMenuGrassImageSelector = ".games-page__header-images--grass",
+            headerMenuGrassImageValue = "https://playrix.com/f/img/ui/game/header/grass1.png",
+            headerMenuHouseImageSelector = ".games-page__header-images--house",
+            headerMenuHouseImageValue = "https://playrix.com/f/img/ui/game/header/house.png",
+            headerMenuAustinImageSelector = ".games-page__header-images--austin",
+            headerMenuAustinImageValue = "https://playrix.com/f/img/ui/game/header/Austin.png",
+            headerMenuCatImageSelector = ".games-page__header-images--cat",
+            headerMenuCatImageValue = "https://playrix.com/f/img/ui/game/header/cat.png",
+            headerMenuRixImageSelector = ".games-page__header-images--rix",
+            headerMenuRixImageValue = "https://playrix.com/f/img/ui/game/header/rix.png",
+            headerMenuPandaImageSelector = ".games-page__header-images--panda",
+            headerMenuPandaImageValue = "https://playrix.com/f/img/ui/game/header/panda_static.png",
+            headerNavbarSelector = ".header__menu.main-menu",
+            //footer menu locators and values
+            footerMenuConfidentialName = "Конфиденциальность",
+            footerMenuContactsName = "Контакты",
+            footerMenuSupportName = "Поддержка",
+            footerMenuSelector = ".footer__link-gallery",
+            footerSocialMenuSelector = ".footer__social-link",
             fbLink = "https://www.facebook.com/PlayrixGames",
             vkLink = "https://vk.com/playrix",
             twitterLink = "https://twitter.com/Playrix",
             linkedinLink =  "https://www.linkedin.com/company/playrix-entertainment",
             instagramLink = "https://www.instagram.com/playrix",
-            youTubeLink = "https://www.youtube.com/user/Playrix";
-
-
+            youTubeLink = "https://www.youtube.com/user/Playrix",
+            footerCopyrightSelector = ".footer__copyright",
+            footerCopyrightValue = "© 2004—2021 Playrix";
 
     public static void openMainPage(){
         open(BASEURL);
     }
 
     public static void checkTheLogo() {
-        $(headerMenuSelector).should(exist).shouldBe(Condition.visible);
-        $(topMenuSearchSelector).should(exist);
+        $(headerLogoMenuSelector).should(exist).shouldBe(Condition.visible);
+        $(headerMenuSearchSelector).should(exist);
     }
 
     public static void checkTopMenu(){
-        $(navbarSelector).should(exist)
+        $(headerNavbarSelector).should(exist)
                 .shouldHave(
-                        text("Игры"),
-                        text("Компания"),
-                        text("Карьера"),
-                        text("EN"));
-        $(headerMenuSelector).should(exist).shouldBe(Condition.visible);
+                text(headerGamesMenuName),
+                text(headerCompanyMenuName),
+                text(headerCarrierMenuName),
+                text(headerLocaleMenuName));
+        $(headerLogoMenuSelector).should(exist).shouldBe(Condition.visible);
     }
 
     public static void checkTopMenuSubmenus(){
-        $$(topMenuSelector).findBy(text(gamesTopMenuName)).should(exist).shouldBe(Condition.visible);
-        $$(topMenuSelector).findBy(text(companyTopMenuName)).hover();
-        $$(topSubmenuSelector).findBy(text(historySubMenuName)).should(exist);
-        $$(topMenuSelector).findBy(text(carrierTopMenuName)).hover();
-        $$(topSubmenuSelector).findBy(text(vacanciesSubMenuName)).should(exist);
+        $$(headerMenuSelector).findBy(text(headerGamesMenuName)).should(exist).shouldBe(Condition.visible);
+        $$(headerMenuSelector).findBy(text(headerCompanyMenuName)).hover();
+        $$(headerSubmenuSelector).findBy(text(headerHistorySubMenuName)).should(exist);
+        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).hover();
+        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
     }
 
     public static void checkHeaderImages(){
-        $(headerMenuImagesSelector).isDisplayed();
-        //$("img[class=games-page__header-images--gradient]").should(exist);
-        //$(headerMenuImagesSelector).shouldHave(attribute("alt", "gradient"));
-
+        $(headerMenuGradientImageSelector)
+                .shouldHave(attribute("src", headerMenuGradientImageValue));
+        $(headerMenuMMImageSelector)
+                .shouldHave(attribute("src", headerMenuMMImageValue));
+        $(headerMenuMMImageSelector)
+                .shouldHave(attribute("src", headerMenuMMImageValue));
+        $(headerMenuGrassImageSelector)
+                .shouldHave(attribute("src", headerMenuGrassImageValue));
+        $(headerMenuHouseImageSelector)
+                .shouldHave(attribute("src", headerMenuHouseImageValue));
+        $(headerMenuAustinImageSelector)
+                .shouldHave(attribute("src", headerMenuAustinImageValue));
+        $(headerMenuCatImageSelector)
+                .shouldHave(attribute("src", headerMenuCatImageValue));
+        $(headerMenuRixImageSelector)
+                .shouldHave(attribute("src", headerMenuRixImageValue));
+        $(headerMenuPandaImageSelector)
+                .shouldHave(attribute("src", headerMenuPandaImageValue));
     }
 
     public static void checkFooterMenu(){
-        $(linksMenuSelector).should(exist).shouldBe(Condition.visible)
+        $(footerMenuSelector).should(exist).shouldBe(Condition.visible)
                 .shouldHave(
-                text("Конфиденциальность"),
-                text("Контакты"),
-                text("Поддержка"));
+                text(footerMenuConfidentialName),
+                text(footerMenuContactsName),
+                text(footerMenuSupportName));
     }
 
     public static void checkSocialButtons(){
-        //$(".footer__social").should(exist);
-        //$$(".footer__social-link").findBy(attribute("https://www.facebook.com/PlayrixGames")).should(exist).shouldBe(Condition.visible);
-        $(footerSocialSelector).shouldHave(href(fbLink)).shouldHave(href(vkLink));
-        /*$(footerSocialSelector).shouldHave(href(vkLink));
-        $(footerSocialSelector).shouldHave(href(twitterLink));
-        $(footerSocialSelector).shouldHave(href(linkedinLink));
-        $(footerSocialSelector).shouldHave(href(instagramLink));
-        $(footerSocialSelector).shouldHave(href(youTubeLink));*/
+        ElementsCollection links = $$(footerSocialMenuSelector).snapshot();
+        links.filter(Condition.href(fbLink)).shouldHave(CollectionCondition.size(1));
+        links.filter(Condition.href(vkLink)).shouldHave(CollectionCondition.size(1));
+        links.filter(Condition.href(twitterLink)).shouldHave(CollectionCondition.size(1));
+        links.filter(Condition.href(linkedinLink)).shouldHave(CollectionCondition.size(1));
+        links.filter(Condition.href(instagramLink)).shouldHave(CollectionCondition.size(1));
+        links.filter(Condition.href(youTubeLink)).shouldHave(CollectionCondition.size(1));
+    }
 
-/*
-        $(fbSelector).should(exist).shouldBe(Condition.visible);
-        $(vkSelector).should(exist).shouldBe(Condition.visible);
-        $(youTubeSelector).should(exist).shouldBe(Condition.visible);
-        $(instagramSelector).should(exist).shouldBe(Condition.visible);
-        $(linkedinSelector).should(exist).shouldBe(Condition.visible);
-        $(twitterSelector).should(exist).shouldBe(Condition.visible);
-*/
+    public static void checkCopyright(){
+        $(footerCopyrightSelector).should(exist).shouldBe(Condition.visible)
+                .shouldHave(
+                 text(footerCopyrightValue));
     }
 }

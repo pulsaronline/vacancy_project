@@ -26,6 +26,7 @@ public class Tests extends TestBase {
         step("Check the header images", MainPage::checkHeaderImages);
         step("Check footer menu", MainPage::checkFooterMenu);
         step("Check the social buttons", MainPage::checkSocialButtons);
+        step("Check copyright", MainPage::checkCopyright);
     }
 
     @Test

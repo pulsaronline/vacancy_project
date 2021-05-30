@@ -3,14 +3,15 @@ package cloud.autotests.tests.cv.pages;
 import com.codeborne.selenide.Condition;
 
 import static cloud.autotests.tests.TestBase.BASEURL;
+import static cloud.autotests.tests.cv.pages.MainPage.*;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class VacancyPage {
     static String
-            defaultButtonSelector = "Перейти к вакансиям",
+            headerVacanciesButtonSelector = "Вакансии",
             allSelector = "#cat-1",
             mngmntSelector = "#cat17",
             productSelector = "#cat1",
@@ -31,7 +32,9 @@ public class VacancyPage {
 
     public static void openVacancyPage() {
         open(BASEURL);
-        $(byText(defaultButtonSelector)).click();
+        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).hover();
+        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
+        $(byText(headerVacanciesButtonSelector)).click();
     }
 
     public static void vacanciesCheck() {
