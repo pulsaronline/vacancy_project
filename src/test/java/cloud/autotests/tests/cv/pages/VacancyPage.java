@@ -13,7 +13,7 @@ public class VacancyPage {
     static String
             headerVacanciesButtonSelector = "Вакансии",
             headerVacanciesTagSelector = ".tags-list",
-            VacanciesTagSelector = ".jobs-card__section-name",
+            bodyVacanciesTagSelector = ".jobs-card",
             headerVacanciesTagAllVacanciesValue = "Все вакансии",
             headerVacanciesTagManagementValue = "Management",
             headerVacanciesTagGameDesignValue = "Game Design",
@@ -42,13 +42,8 @@ public class VacancyPage {
         $(byText(headerVacanciesButtonSelector)).click();
     }
 
-    public static void vacanciesCheck() {
-        vacanciesCheckBySelector(headerVacanciesTagSelector);
-        vacanciesCheckBySelector(VacanciesTagSelector);
-    }
-
-    static void vacanciesCheckBySelector(String selector){
-        $(selector).shouldHave(text(headerVacanciesTagAllVacanciesValue),
+    public static void headerVacanciesCheck() {
+        $(headerVacanciesTagSelector).shouldHave(text(headerVacanciesTagAllVacanciesValue),
                 text(headerVacanciesTagManagementValue),
                 text(headerVacanciesTagGameDesignValue),
                 text(headerVacanciesTagMarketingValue),
@@ -67,6 +62,28 @@ public class VacancyPage {
                 text(headerVacanciesTagPRValue),
                 text(headerVacanciesTagAdministrationValue),
                 text(headerVacanciesTagCommunityAndSupportValue),
+                text(headerVacanciesTagLocalizationValue));
+    }
+
+    public static void bodyVacanciesCheck(){
+        $(bodyVacanciesTagSelector).shouldHave(
+                text(headerVacanciesTagManagementValue),
+                text(headerVacanciesTagGameDesignValue),
+                text(headerVacanciesTagMarketingValue),
+                text(headerVacanciesTagBusinessDevelopmentValue),
+                text(headerVacanciesTagMarketingCreativesValue),
+                text(headerVacanciesTagArtValue),
+                text(headerVacanciesTagAnimationVFXValue),
+                text(headerVacanciesTagAnalyticsValue),
+                text(headerVacanciesTagCppDevelopmentValue),
+                text(headerVacanciesTagPythonDevelopmentValue),
+                text(headerVacanciesTagFrontEndDevelopmentValue),
+                text(headerVacanciesTagITValue),
+                text(headerVacanciesTagQAValue),
+                text(headerVacanciesTagFinanceAndLegalValue),
+                text(headerVacanciesTagHRAndRecruitingValue),
+                text(headerVacanciesTagPRValue),
+                text(headerVacanciesTagAdministrationValue),
                 text(headerVacanciesTagLocalizationValue));
     }
 }
