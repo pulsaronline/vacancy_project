@@ -15,7 +15,7 @@ import static io.qameta.allure.Allure.step;
 public class Tests extends TestBase {
 
     @Test
-    @Owner("MaksimBessudnov")
+    @Owner("BessudnovMaksim")
     @Tag("ui")
     @DisplayName("UI test: Check items on the main page")
     void mainPageUITest() {
@@ -30,7 +30,7 @@ public class Tests extends TestBase {
     }
 
     @Test
-    @Owner("MaksimBessudnov")
+    @Owner("BessudnovMaksim")
     @Tag("ui")
     @DisplayName("UI test: Check items on the vacancies page")
     void vacancyPageUITest() {
@@ -42,7 +42,7 @@ public class Tests extends TestBase {
     }
 
     @Test
-    @Owner("MaksimBessudnov")
+    @Owner("BessudnovMaksim")
     @Tag("ui")
     @DisplayName("UI test: Fill, check and submit the target vacancy form")
     void cvPageFillAndCheckUITest() {
@@ -61,7 +61,7 @@ public class Tests extends TestBase {
     }
 
     @Test
-    @Owner("MaksimBessudnov")
+    @Owner("BessudnovMaksim")
     @Tag("api")
     @Disabled("Example test code for further test development")
     @DisplayName("API test: _______ playrix.com")
