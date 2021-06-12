@@ -12,23 +12,28 @@ import static com.codeborne.selenide.Selenide.$$;
 public class VacancyPage {
     static String
             headerVacanciesButtonSelector = "Вакансии",
-            allSelector = "#cat-1",
-            mngmntSelector = "#cat17",
-            productSelector = "#cat1",
-            gamedisSelector = "#cat5",
-            businessSelector = "#cat18",
-            marketingSelector = "#cat7",
-            uaSelector = "#cat23",
-            artSelector = "#cat2",
-            analyticsSelector = "#cat3",
-            cppSelector = "#cat24",
-            pythonSelector = "#cat4",
-            frontendSelector = "#cat25",
-            itSelector = "#cat19",
-            qaSelector = "#cat6",
-            financeSelector = "#cat12",
-            hrSelector = "#cat8",
-            adminSelector = "#cat20";
+            headerVacanciesTagSelector = ".tags-list",
+            VacanciesTagSelector = ".jobs-card__section-name",
+            headerVacanciesTagAllVacanciesValue = "Все вакансии",
+            headerVacanciesTagManagementValue = "Management",
+            headerVacanciesTagGameDesignValue = "Game Design",
+            headerVacanciesTagMarketingValue = "Marketing",
+            headerVacanciesTagBusinessDevelopmentValue = "Business Development",
+            headerVacanciesTagMarketingCreativesValue = "Marketing Creatives",
+            headerVacanciesTagArtValue = "Art",
+            headerVacanciesTagAnimationVFXValue = "Animation & VFX",
+            headerVacanciesTagAnalyticsValue = "Analytics",
+            headerVacanciesTagCppDevelopmentValue = "С++ Development",
+            headerVacanciesTagPythonDevelopmentValue = "Python Development",
+            headerVacanciesTagFrontEndDevelopmentValue = "Front-end Development",
+            headerVacanciesTagITValue = "IT",
+            headerVacanciesTagQAValue = "QA",
+            headerVacanciesTagFinanceAndLegalValue = "Finance & Legal",
+            headerVacanciesTagHRAndRecruitingValue = "HR & Recruiting",
+            headerVacanciesTagPRValue = "PR",
+            headerVacanciesTagAdministrationValue = "Administration",
+            headerVacanciesTagCommunityAndSupportValue = "Community & Support",
+            headerVacanciesTagLocalizationValue = "Localization";
 
     public static void openVacancyPage() {
         open(BASEURL);
@@ -38,22 +43,30 @@ public class VacancyPage {
     }
 
     public static void vacanciesCheck() {
-        $(allSelector).should(exist).shouldBe(visible);
-        $(mngmntSelector).should(exist).shouldBe(visible);
-        $(productSelector).should(exist).shouldBe(visible);
-        $(gamedisSelector).should(exist).shouldBe(visible);
-        $(businessSelector).should(exist).shouldBe(visible);
-        $(marketingSelector).should(exist).shouldBe(visible);
-        $(uaSelector).should(exist).shouldBe(visible);
-        $(artSelector).should(exist).shouldBe(visible);
-        $(analyticsSelector).should(exist).shouldBe(visible);
-        $(cppSelector).should(exist).shouldBe(visible);
-        $(pythonSelector).should(exist).shouldBe(visible);
-        $(frontendSelector).should(exist).shouldBe(visible);
-        $(itSelector).should(exist).shouldBe(visible);
-        $(qaSelector).should(exist).shouldBe(visible);
-        $(financeSelector).should(exist).shouldBe(visible);
-        $(hrSelector).should(exist).shouldBe(visible);
-        $(adminSelector).should(exist).shouldBe(visible);
+        vacanciesCheckBySelector(headerVacanciesTagSelector);
+        vacanciesCheckBySelector(VacanciesTagSelector);
+    }
+
+    static void vacanciesCheckBySelector(String selector){
+        $(selector).shouldHave(text(headerVacanciesTagAllVacanciesValue),
+                text(headerVacanciesTagManagementValue),
+                text(headerVacanciesTagGameDesignValue),
+                text(headerVacanciesTagMarketingValue),
+                text(headerVacanciesTagBusinessDevelopmentValue),
+                text(headerVacanciesTagMarketingCreativesValue),
+                text(headerVacanciesTagArtValue),
+                text(headerVacanciesTagAnimationVFXValue),
+                text(headerVacanciesTagAnalyticsValue),
+                text(headerVacanciesTagCppDevelopmentValue),
+                text(headerVacanciesTagPythonDevelopmentValue),
+                text(headerVacanciesTagFrontEndDevelopmentValue),
+                text(headerVacanciesTagITValue),
+                text(headerVacanciesTagQAValue),
+                text(headerVacanciesTagFinanceAndLegalValue),
+                text(headerVacanciesTagHRAndRecruitingValue),
+                text(headerVacanciesTagPRValue),
+                text(headerVacanciesTagAdministrationValue),
+                text(headerVacanciesTagCommunityAndSupportValue),
+                text(headerVacanciesTagLocalizationValue));
     }
 }
