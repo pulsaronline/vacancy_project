@@ -20,12 +20,12 @@ public class Tests extends TestBase {
     @DisplayName("UI test: Check items on the main page")
     void mainPageUITest() {
         step("Open main page", MainPage::openMainPage);
-        step("Check the company logo", MainPage::checkTheLogo);
-        step("Check the top menu", MainPage::checkTopMenu);
-        step("Check the top menu submenus", MainPage::checkTopMenuSubmenus);
-        step("Check the header images", MainPage::checkHeaderImages);
+        step("Check company logo", MainPage::checkTheLogo);
+        step("Check top menu", MainPage::checkTopMenu);
+        step("Check top menu submenus", MainPage::checkTopMenuSubmenus);
+        step("Check header images", MainPage::checkHeaderImages);
         step("Check footer menu", MainPage::checkFooterMenu);
-        step("Check the social buttons", MainPage::checkSocialButtons);
+        step("Check social buttons", MainPage::checkSocialButtons);
         step("Check copyright", MainPage::checkCopyright);
     }
 
@@ -35,17 +35,20 @@ public class Tests extends TestBase {
     @DisplayName("UI test: Check items on the vacancies page")
     void vacancyPageUITest() {
         step("Open vacancy page", VacancyPage::openVacancyPage);
-        step("Check the company logo", MainPage::checkTheLogo);
-        step("Check the top menu", MainPage::checkTopMenu);
+        step("Check company logo", MainPage::checkTheLogo);
+        step("Check top menu", MainPage::checkTopMenu);
         step("Check footer menu", MainPage::checkFooterMenu);
         step("Check header vacancies menu", VacancyPage::headerVacanciesCheck);
-        step("Check body vacancies menu", VacancyPage::bodyVacanciesCheck);
+        step("Check body tags of the vacancies", VacancyPage::bodyVacanciesTagCheck);
+        step("Check body names of the vacancies", VacancyPage::bodyVacanciesNamesCheck);
+        step("Check footer FAQ section", VacancyPage::footerFaqSectionCheck);
+
     }
 
     @Test
     @Owner("BessudnovMaksim")
     @Tag("ui")
-    @DisplayName("UI test: Fill, check and submit the target vacancy form")
+    @DisplayName("UI test: Fill, check and submit the vacancy form")
     void cvPageFillAndCheckUITest() {
         step("Open target page", CvPage::openCvPage);
         step("Open the form", CvPage::openPageForm);
