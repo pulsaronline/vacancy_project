@@ -1,9 +1,15 @@
 package cloud.autotests.tests.cv.pages;
 
+import com.codeborne.selenide.CollectionCondition;
+import com.codeborne.selenide.Condition;
+import org.openqa.selenium.By;
+
 import static cloud.autotests.tests.TestBase.BASEURL;
 import static cloud.autotests.tests.cv.pages.MainPage.*;
+import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.byValue;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$$;
 
@@ -18,6 +24,8 @@ public class VacancyPage {
             // footer selectors
             footerFaqTagSelector = ".all-jobs-faq__header",
             footerFaqSectionSelector = ".faq-card",
+            footerFaqWorkOrganizeDropDownWindowSelector = ".faq-card__fold",
+            footerFaqWorkOrganizeWindowSelector = ".faq-card__description",
 
             // VALUES
             // header menu vacancy section name values
@@ -41,6 +49,7 @@ public class VacancyPage {
             headerVacanciesTagAdministrationValue = "Administration",
             headerVacanciesTagCommunityAndSupportValue = "Community & Support",
             headerVacanciesTagLocalizationValue = "Localization",
+
             // body vacancy section name values
             // Management
             bodyVacancyDevelopmentDirector = "Development Director",
@@ -140,6 +149,7 @@ public class VacancyPage {
             bodyVacancyOfficeManager = "Office Manager",
             // Localization
             bodyVacancyTranslatorRUEN = "Translator RU-EN",
+
             // footer vacancy section name values
             footerFaqTagValue = "FAQ",
             footerFaqWorkOrganizeValue = "Как организована удаленная работа в Playrix?",
@@ -149,7 +159,9 @@ public class VacancyPage {
             footerFaqFeedbackValue = "Когда я получу ответ после прохождения собеседования/выполнения тестового задания?",
             footerFaqResubmitValue = "Могу ли я повторно подавать резюме на вакансии компании?",
             footerFaqTestsValue = "Есть ли у вас тестовые задания?",
-            footerFaqAboutCompanyInfoValue = "Где еще можно ознакомиться с информацией о компании?";
+            footerFaqAboutCompanyInfoValue = "Где еще можно ознакомиться с информацией о компании?",
+            footerFaqWorkOrganizeFoundersValue = "Основатели Playrix об управлении распределенной командой",
+            footerFaqWorkOrganizePodcastValue = "Подкаст на тему удаленной работы с участием основателей компании";
 
     public static void openVacancyPage() {
         open(BASEURL);
@@ -319,5 +331,10 @@ public class VacancyPage {
                 text(footerFaqTestsValue),
                 text(footerFaqAboutCompanyInfoValue)
                 ).shouldBe(visible);
+        $(footerFaqWorkOrganizeDropDownWindowSelector).click();
+        $(footerFaqWorkOrganizeWindowSelector).shouldBe(visible);
+        $(footerFaqSectionSelector).shouldHave(
+                text(footerFaqWorkOrganizeFoundersValue),
+                text(footerFaqWorkOrganizePodcastValue)).shouldBe(visible);
     }
 }

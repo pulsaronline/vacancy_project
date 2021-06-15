@@ -2,70 +2,127 @@ package cloud.autotests.tests.cv.pages;
 
 import static cloud.autotests.tests.TestBase.BASEURL;
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byName;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selenide.*;
 
 public class CvPage {
     static String
-            respondButtonSelector = "Откликнуться",
-            firstName = "Максим",
-            firstNameSelector = "first_name",
-            lastName = "Бессуднов",
-            lastNameSelector = "last_name",
-            email = "beslite@gmail.com",
-            emailSelector = "email",
-            phoneNumber = "+79263069330",
-            phoneNumberSelector = "contact",
-            about = "Здравствуйте! Опыт работы в качестве QA engineer 3 года. Ссылки на портфолио в моем CV.",
-            aboutSelector = "cover_letter",
-            checkboxSelector = "#js-agree",
-            secondFilename = "CV_Bessudnov.pdf",
-            secondFilenameSelector = "second_file",
-            submitButtonSelector = "#js-apply";
+            respondButtonSelector = "QA Engineer, Engine",
+            firstNameValue = "Бессуднов Максим",
+            attributeSelector = "placeholder",
+            emailValue = "beslite@gmail.com",
+            skypeValue = "thecelldweller",
+            cityValue = "Москва",
+            salaryValue = "100 000",
+            attributeFirstNameValue = "Фамилия и имя",
+            attributeEmailValue = "Эл. почта",
+            attributeSkypeValue = "Скайп",
+            attributeCityValue = "Из какого вы города?",
+            checkboxOfficeSelector = "Офис",
+            checkboxRemoteSelector = "Удаленно",
+            whyYouInterestedInSelector = ".error-bubble",
+            whyYouInterestedInErrorValue = "Мы хотели бы понимать, почему вам интересна наша компания",
+            whyYouInterestedInAnswerValue = "1. Playrix это лидер на рынке игровой индустрии;\n" +
+                                            "2. Есть возможность удаленной работы.",
+            attributeWhereDidYouKnowAboutValue = "Откуда вы узнали о вакансии?",
+            attributeWhereDidYouKnowAboutSourceValue = "HH",
+            whyYouInterestedInValue = "Почему вам интересен Playrix?",
+            aboutMyselfValueQueryValue = "Расскажите коротко о себе, добавьте ссылки на свои работы",
+            attributeSalaryValue = "Пожелание по зарплате",
+            phoneNumberValue = "+79263069330",
+            phoneNumberAttributeValue = "Телефон",
+            telegramIdValue = "@mBessudnov",
+            telegramIdAttributeValue = "Telegram",
+            uploadCVFileAttributeSelector = "name",
+            uploadCVFileAttributeValue = "file",
+            filename = "CV_mBessudnov.pdf",
+            agreementCheckboxSelector = ".check__box",
+            submitButtonSelector = ".all-jobs-form__button",
+            aboutMyselfValue = "Здравствуйте!\nДля отправки Вам своего CV я использовал:\n" +
+                    "IDE - Intellij idea community 2020.3\n"+
+                    "Стек - Java8, Junit5, Selenide(UI тест), REST Assured(API тест)\n"+
+                    "Отчетность - Allure report/Testops, Telegram, Slack\n"+
+                    "CI - Jenkins";
 
     public static void openCvPage(){
         //open("https://job.playrix.com/");
         open(BASEURL);
-        $(byText("Перейти к вакансиям")).click();
-        $("#cat6").click();
-        $(byText("QA Engineer, Engine")).click();
+        $(byText("Карьера")).click();
+        sleep(300);
+        $(byText("Вакансии")).click();
+        sleep(300);
     }
 
     public static void openPageForm(){
         $(byText(respondButtonSelector)).click();
     }
 
-    public static void typeNames(){
-        $(byName(firstNameSelector)).setValue(firstName);
-        $(byName(firstNameSelector)).shouldBe(visible);
-        $(byName(lastNameSelector)).setValue(lastName);
-        $(byName(lastNameSelector)).shouldBe(visible);
+    public static void typeName(){
+        $(byAttribute(attributeSelector, attributeFirstNameValue))
+                .scrollTo()
+                .setValue(firstNameValue);
     }
 
     public static void typeEmail() {
-        $(byName(emailSelector)).setValue(email);
-        $(byName(emailSelector)).shouldBe(visible);
+        $(byAttribute(attributeSelector, attributeEmailValue))
+                .setValue(emailValue);
+    }
+
+    public static void typeScype() {
+        $(byAttribute(attributeSelector, attributeSkypeValue))
+                .setValue(skypeValue);
+    }
+
+    public static void typeCity() {
+        $(byAttribute(attributeSelector, attributeCityValue))
+                .setValue(cityValue);
+    }
+
+    public static void typeSalary() {
+        $(byAttribute(attributeSelector, attributeSalaryValue))
+                .setValue(salaryValue);
+    }
+
+    public static void clickCheckboxes(){
+        $(byText(checkboxOfficeSelector)).click();
+        $(byText(checkboxRemoteSelector)).click();
+    }
+
+    public static void whereDidYouKnowAbout(){
+        $(byAttribute(attributeSelector, attributeWhereDidYouKnowAboutValue)).click();
+        $(byText(attributeWhereDidYouKnowAboutSourceValue)).click();
+    }
+
+    public static void whyYouInterestedIn(){
+        $(byAttribute(attributeSelector, whyYouInterestedInValue)).setValue("a");
+        $(whyYouInterestedInSelector).shouldHave(text(whyYouInterestedInErrorValue));
+        $(byAttribute(attributeSelector, whyYouInterestedInValue))
+                .setValue(whyYouInterestedInAnswerValue).pressTab();
+    }
+
+    public static void aboutMyself(){
+        $(byAttribute(attributeSelector, aboutMyselfValueQueryValue))
+                .setValue(aboutMyselfValue).pressEnter();
     }
 
     public static void typePhoneNumber(){
-        $(byName(phoneNumberSelector)).setValue(phoneNumber);
-        $(byName(phoneNumberSelector)).shouldBe(visible);
+        $(byAttribute(attributeSelector, phoneNumberAttributeValue))
+                .setValue(phoneNumberValue).pressTab();
     }
 
-    public static void typeAbout(){
-        $(byName(aboutSelector)).setValue(about);
-        $(byName(aboutSelector)).shouldBe(visible);
+    public static void typeTelegramId(){
+        $(byAttribute(attributeSelector, telegramIdAttributeValue))
+                .setValue(telegramIdValue).pressEnter();
     }
 
     public static void pressAgreementCheckbox(){
-        $(checkboxSelector).click();
-        $(checkboxSelector).shouldBe(visible);
+        $(agreementCheckboxSelector).click();
+        $(agreementCheckboxSelector).shouldBe(visible);
     }
 
     public static void uploadCV(){
-        $(byName(secondFilenameSelector)).uploadFromClasspath("cv/" + secondFilename);
+        $(byAttribute(uploadCVFileAttributeSelector, uploadCVFileAttributeValue))
+                .uploadFromClasspath("cv/" + filename);
     }
 
     public static void submitTheForm(){
