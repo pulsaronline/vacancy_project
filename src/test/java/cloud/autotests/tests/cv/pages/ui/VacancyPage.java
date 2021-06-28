@@ -1,15 +1,9 @@
-package cloud.autotests.tests.cv.pages;
-
-import com.codeborne.selenide.CollectionCondition;
-import com.codeborne.selenide.Condition;
-import org.openqa.selenium.By;
+package cloud.autotests.tests.cv.pages.ui;
 
 import static cloud.autotests.tests.TestBase.BASEURL;
-import static cloud.autotests.tests.cv.pages.MainPage.*;
-import static com.codeborne.selenide.CollectionCondition.size;
+import static cloud.autotests.tests.cv.pages.ui.MainPage.*;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.byValue;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$$;
 
@@ -276,7 +270,7 @@ public class VacancyPage {
                 // Python Development
                 text(bodyVacancyPythonTechLead),
                 text(bodyVacancyPythonProgrammer),
-                text(bodyVacancyPythonDeveloper),
+                //text(bodyVacancyPythonDeveloper),
                 // Front-end Development
                 text(bodyVacancyPlayableAdsDeveloper),
                 text(bodyVacancyJavaScriptDeveloper),
@@ -300,14 +294,14 @@ public class VacancyPage {
                 text(bodyVacancyJuniorQAEngineer),
                 text(bodyVacancyQAEngineerEngine),
                 // Finance & Legal
-                text(bodyVacancyLegalCounselPrivacy),
+                // text(bodyVacancyLegalCounselPrivacy),
                 text(bodyVacancyComplianceOfficer),
                 text(bodyVacancyAnalystConsultant),
                 // HR & Recruiting
                 text(bodyVacancyITRecruiter),
                 text(bodyVacancyArtRecruiter),
                 text(bodyVacancyResearcher),
-                text(bodyVacancyJuniorTalentSourcer),
+                // text(bodyVacancyJuniorTalentSourcer),
                 // PR
                 text(bodyVacancyPRManager),
                 // Administration

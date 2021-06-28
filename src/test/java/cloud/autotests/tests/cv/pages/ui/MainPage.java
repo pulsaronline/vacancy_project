@@ -1,4 +1,4 @@
-package cloud.autotests.tests.cv.pages;
+package cloud.autotests.tests.cv.pages.ui;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
@@ -42,6 +42,21 @@ public class MainPage {
             headerMenuPandaImageSelector = ".games-page__header-images--panda",
             headerMenuPandaImageValue = "https://playrix.com/f/img/ui/game/header/panda_static.png",
             headerNavbarSelector = ".header__menu.main-menu",
+            //body menu locators and values
+            bodyManorMattersSelector = ".game.game--manor-matters.game--default.games-list__item",
+            bodyManorMattersValue = "https://playrix.com/games/manor-matters",
+            bodyWildscapesSelector = ".game.game--wildscapes.game--default.games-list__item",
+            bodyWildscapesValue ="https://playrix.com/games/wildscapes",
+            bodyHomescapesSelector = ".game.game--homescapes.game--default.games-list__item",
+            bodyHomescapesValue = "https://playrix.com/games/homescapes",
+            bodyGardenscapesSelector = ".game.game--gardenscapes.game--default.games-list__item",
+            bodyGardenscapesValue = "https://playrix.com/games/gardenscapes",
+            bodyFarmscapesSelector = ".game.game--farmscapes.game--default.games-list__item",
+            bodyFarmscapesValue = "https://playrix.com/games/farmscapes",
+            bodyTownshipSelector = ".game.game--township.game--default.games-list__item",
+            bodyTownshipValue = "https://playrix.com/games/township",
+            bodyFishdomSelector = ".game.game--fishdom.game--default.games-list__item",
+            bodyFishdomValue = "https://playrix.com/games/fishdom",
             //footer menu locators and values
             footerMenuConfidentialName = "Конфиденциальность",
             footerMenuContactsName = "Контакты",
@@ -103,6 +118,23 @@ public class MainPage {
                 .shouldHave(attribute("src", headerMenuRixImageValue));
         $(headerMenuPandaImageSelector)
                 .shouldHave(attribute("src", headerMenuPandaImageValue));
+    }
+
+    public static void checkGames(){
+        $(bodyManorMattersSelector).scrollTo()
+                .shouldHave(attribute("href", bodyManorMattersValue));
+        $(bodyWildscapesSelector).scrollTo()
+                .shouldHave(attribute("href", bodyWildscapesValue));
+        $(bodyHomescapesSelector).scrollTo()
+                .shouldHave(attribute("href", bodyHomescapesValue));
+        $(bodyGardenscapesSelector).scrollTo()
+                .shouldHave(attribute("href", bodyGardenscapesValue));
+        $(bodyFarmscapesSelector).scrollTo()
+                .shouldHave(attribute("href", bodyFarmscapesValue));
+        $(bodyTownshipSelector).scrollTo()
+                .shouldHave(attribute("href", bodyTownshipValue));
+        $(bodyFishdomSelector).scrollTo()
+                .shouldHave(attribute("href", bodyFishdomValue));
     }
 
     public static void checkFooterMenu(){

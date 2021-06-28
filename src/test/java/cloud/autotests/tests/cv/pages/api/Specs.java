@@ -1,4 +1,4 @@
-package cloud.autotests.tests.cv.api;
+package cloud.autotests.tests.cv.pages.api;
 
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
@@ -6,7 +6,7 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
 import static io.restassured.RestAssured.with;
-import static org.hamcrest.Matchers.containsString;
+import static io.restassured.http.ContentType.JSON;
 
 public class Specs {
     public static RequestSpecification request = with()

@@ -1,4 +1,4 @@
-package cloud.autotests.tests.cv.pages;
+package cloud.autotests.tests.cv.pages.ui;
 
 import static cloud.autotests.tests.TestBase.BASEURL;
 import static com.codeborne.selenide.Condition.*;
