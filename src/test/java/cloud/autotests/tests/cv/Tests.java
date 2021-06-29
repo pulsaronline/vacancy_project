@@ -92,7 +92,7 @@ public class Tests extends TestBase {
     @Tag("api")
     @DisplayName("API sampling test: check the fields and error messages at page\"\"QA Engineer, Engine\"")
     void apiCarrierQAEngineerPageFieldsAndErrorMessagesTest() {
-        //open();
+        open();
         Specs.request
                 .when()
                 .get("/api/v1/index.php?vacancyFormBuilder/getList")
@@ -209,7 +209,7 @@ public class Tests extends TestBase {
     @Tag("api")
     @DisplayName("API sampling test: check the fields at page\"\"History\"")
     void apiHistoryPageFieldsTest() {
-        //open();
+        open();
 //        Specs.request
 //                .when()
 //                .get("https://playrix.com/api/v1/index.php?historyPage/getList")

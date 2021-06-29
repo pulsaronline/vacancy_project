@@ -78,8 +78,8 @@ public class MainPage {
     }
 
     public static void checkLocale(){
-        if($(headerNavbarSelector).toString().contains(headerLocaleMenuNameRu)) {
-            $$(headerNavbarSelector).findBy(text(headerLocaleMenuNameRu)).hover().click();
+        if($$(headerMenuSelector).contains(headerLocaleMenuNameRu)) {
+            $$(headerMenuSelector).findBy(text(headerLocaleMenuNameRu)).hover().click();
         }
     }
 
