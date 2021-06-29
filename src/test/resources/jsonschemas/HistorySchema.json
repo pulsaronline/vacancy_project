@@ -1,0 +1,3450 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "action": "historyPage/getList",
+      "success": true,
+      "items": {
+        "2020": [
+          {
+            "id": 1018,
+            "sort": 102,
+            "name": "",
+            "previewPicture": null,
+            "year": "2020",
+            "video": null,
+            "youtube": "",
+            "type": "center",
+            "previewText": "<p>\r\n <strong>Playrix — в топ-3</strong>&nbsp;разработчиков мобильных игр в мире\r\n</p>",
+            "link": null
+          }
+        ],
+        "2019": [
+          {
+            "id": 1020,
+            "sort": 106,
+            "name": "Playrix — крупнейшая игровая компания в СНГ",
+            "previewPicture": null,
+            "year": "2019",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t Благодаря M&amp;A и возможности работать удаленно&nbsp;Playrix стал&nbsp;расти еще быстрее, закрепившись&nbsp;в пятерке лучших игровых компаний в мире.\r\n</p>",
+            "link": {
+              "value": "/job/open",
+              "description": "Узнать вакансии"
+            }
+          }
+        ],
+        "2018": [
+          {
+            "id": 1023,
+            "sort": 112,
+            "name": "M&A: cлияния и поглощения",
+            "previewPicture": {
+              "src": "/upload/iblock/b00/b00ba6389545ad92fc734d1056a1dfc7.png",
+              "width": 1399,
+              "height": 1307,
+              "size": 1097355,
+              "name": "history_1 (1).png"
+            },
+            "year": "2018",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t Компания заключила сотрудничество с пятью студиями в СНГ, положив начало развитию направления M&amp;A. В разработку запущено рекордное количество проектов.\r\n</p>",
+            "link": null
+          },
+          {
+            "id": 1024,
+            "sort": 500,
+            "name": "",
+            "previewPicture": null,
+            "year": "2018",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<h3></h3>\r\n<h3 style=\"text-align: left;\"></h3>\r\n<h3 style=\"text-align: left;\">Мы можем потратить несколько лет на разработку игры. Для нас важно <strong>сделать качественно</strong>, а не&nbsp;быстро.<br>\r\n </h3>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n\t Игорь Бухман, сооснователь Playrix\r\n</p>",
+            "link": null
+          }
+        ],
+        "2017": [
+          {
+            "id": 1209,
+            "sort": 114,
+            "name": "",
+            "previewPicture": null,
+            "year": "2017",
+            "video": null,
+            "youtube": "",
+            "type": "center",
+            "previewText": "<p>\r\n <strong>Playrix — в топ-10</strong> самых успешных игровых разработчиков мира\r\n</p>",
+            "link": null
+          },
+          {
+            "id": 1025,
+            "sort": 116,
+            "name": "Рекорды Homescapes",
+            "previewPicture": null,
+            "year": "2017",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t Проект продолжил историю Остина из Gardenscapes и стал одной из лучших игр года по версии Google Play. Это сделало серию Scapes™ ведущим брендом компании и флагманом рынка match-3.\r\n</p>",
+            "link": {
+              "value": "/games/homescapes",
+              "description": "Homescapes"
+            }
+          }
+        ],
+        "2016": [
+          {
+            "id": 1030,
+            "sort": 126,
+            "name": "Запуск Gardenscapes",
+            "previewPicture": null,
+            "year": "2016",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t Новаторская механика&nbsp;«‎match-3 + история»‎ от Playrix стала настоящим хитом. Проект стал&nbsp;одним из лучших приложений года и лучшей игрой года по версии Facebook.\r\n</p>",
+            "link": {
+              "value": "/games/gardenscapes",
+              "description": "Gardenscapes"
+            }
+          },
+          {
+            "id": 1950,
+            "sort": 128,
+            "name": "",
+            "previewPicture": null,
+            "year": "2016",
+            "video": null,
+            "youtube": "",
+            "type": "center",
+            "previewText": "<p>\r\n\t Разработка&nbsp;первой игры серии&nbsp;<strong><a href=\"games/scapes\">Scapes</a>™</strong>\r\n</p>",
+            "link": null
+          }
+        ],
+        "2015": [
+          {
+            "id": 1032,
+            "sort": 130,
+            "name": "Быстрый успех Fishdom",
+            "previewPicture": null,
+            "year": "2015",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t Playrix продолжает разработку в&nbsp;формате&nbsp;F2P и создает&nbsp;проект в жанре match-3 с механикой метаигры. Игра сразу попала в топ-50 App Store и Google Play.\r\n</p>",
+            "link": {
+              "value": "/games/fishdom",
+              "description": "Fishdom"
+            }
+          }
+        ],
+        "2014": [
+          {
+            "id": 1035,
+            "sort": 136,
+            "name": "",
+            "previewPicture": null,
+            "year": "2014",
+            "video": null,
+            "youtube": "",
+            "type": "center",
+            "previewText": "Playrix начинает работать&nbsp;<strong>удаленно</strong>",
+            "link": null
+          }
+        ],
+        "2013": [
+          {
+            "id": 1037,
+            "sort": 140,
+            "name": "Выход на рынок free-to-play",
+            "previewPicture": {
+              "src": "/upload/iblock/bd6/bd6a9655df41704ce54fba8a6800eda5.png",
+              "width": 3234,
+              "height": 2598,
+              "size": 1890968,
+              "name": "history_2.png"
+            },
+            "year": "2013",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t Непростое решение адаптировать разработку под мобильные&nbsp;платформы&nbsp;принесло отличные результаты. F2P-Township попал в топ-50 App Store и Google Play.\r\n</p>",
+            "link": {
+              "value": "/games/township",
+              "description": "Township"
+            }
+          },
+          {
+            "id": 1038,
+            "sort": 142,
+            "name": "",
+            "previewPicture": null,
+            "year": "2013",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<h3></h3>\r\n<h3 style=\"text-align: left;\"></h3>\r\n<h3 style=\"text-align: left;\">Смена курса — это не признак слабости. Именно способность <strong>поменять видение</strong><b>&nbsp;позволяет добиться успеха‎.&nbsp;<br>\r\n </b></h3>\r\n <b>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n </b>\r\n<p style=\"text-align: left;\">\r\n\t Дима Бухман, сооснователь Playrix\r\n</p>\r\n <b>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n </b>",
+            "link": null
+          }
+        ],
+        "2012": [
+          {
+            "id": 1042,
+            "sort": 150,
+            "name": "Изменение стратегии",
+            "previewPicture": {
+              "src": "/upload/iblock/b74/b745c527941ef7cf6c7515a3675ca09a.png",
+              "width": 1411,
+              "height": 1237,
+              "size": 935522,
+              "name": "ff34837d9f5b9736771663bcec494bc0.png"
+            },
+            "year": "2012",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t Первую «социальную»‎ игру, Township, ждал успех. Но компания решила заморозить это направление в пользу растущего рынка мобильных игр.<br>\r\n</p>",
+            "link": {
+              "value": "/games/township",
+              "description": "Township"
+            }
+          }
+        ],
+        "2010": [
+          {
+            "id": 1043,
+            "sort": 152,
+            "name": "",
+            "previewPicture": null,
+            "year": "2010",
+            "video": null,
+            "youtube": "",
+            "type": "center",
+            "previewText": "Разработка&nbsp;первой игры для <strong>социальных платформ</strong>",
+            "link": null
+          }
+        ],
+        "2009": [
+          {
+            "id": 1045,
+            "sort": 156,
+            "name": "Эпоха РС",
+            "previewPicture": null,
+            "year": "2009",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t За первые несколько лет Playrix выпустил более 20 успешных PC-игр. В это время в компании формируются основные принципы работы и миссия.\r\n</p>",
+            "link": null
+          }
+        ],
+        "2004": [
+          {
+            "id": 1046,
+            "sort": 158,
+            "name": "",
+            "previewPicture": null,
+            "year": "2004",
+            "video": null,
+            "youtube": "",
+            "type": "center",
+            "previewText": "Основание <strong>Playrix</strong>",
+            "link": null
+          },
+          {
+            "id": 1201,
+            "sort": 500,
+            "name": "Все началось с хобби...",
+            "previewPicture": null,
+            "year": "2004",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t Братья Дима и Игорь&nbsp;Бухманы решают превратить свое хобби — разработку игр — в бизнес.\r\n</p>",
+            "link": null
+          }
+        ],
+        "2008": [
+          {
+            "id": 1949,
+            "sort": 500,
+            "name": "Рождение Остина",
+            "previewPicture": null,
+            "year": "2008",
+            "video": null,
+            "youtube": "",
+            "type": "simple",
+            "previewText": "<p>\r\n\t Создан первый концепт дворецкого Остина&nbsp;— в будущем самого узнаваемого персонажа мобильных игр серии&nbsp;Scapes™.\r\n</p>",
+            "link": {
+              "value": "/games/scapes",
+              "description": "Scapes"
+            }
+          }
+        ]
+      },
+      "debug": {
+        "run_time": 0,
+        "sql": {
+          "time": 0,
+          "count": null,
+          "queries": null
+        },
+        "cache": {
+          "type": null,
+          "size": null
+        },
+        "php": ""
+      }
+    }
+  ],
+  "required": [
+    "action",
+    "success",
+    "items",
+    "debug"
+  ],
+  "properties": {
+    "action": {
+      "$id": "#/properties/action",
+      "type": "string",
+      "title": "The action schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "historyPage/getList"
+      ]
+    },
+    "success": {
+      "$id": "#/properties/success",
+      "type": "boolean",
+      "title": "The success schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "items": {
+      "$id": "#/properties/items",
+      "type": "object",
+      "title": "The items schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "2020": [
+            {
+              "id": 1018,
+              "sort": 102,
+              "name": "",
+              "previewPicture": null,
+              "year": "2020",
+              "video": null,
+              "youtube": "",
+              "type": "center",
+              "previewText": "<p>\r\n <strong>Playrix — в топ-3</strong>&nbsp;разработчиков мобильных игр в мире\r\n</p>",
+              "link": null
+            }
+          ],
+          "2019": [
+            {
+              "id": 1020,
+              "sort": 106,
+              "name": "Playrix — крупнейшая игровая компания в СНГ",
+              "previewPicture": null,
+              "year": "2019",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t Благодаря M&amp;A и возможности работать удаленно&nbsp;Playrix стал&nbsp;расти еще быстрее, закрепившись&nbsp;в пятерке лучших игровых компаний в мире.\r\n</p>",
+              "link": {
+                "value": "/job/open",
+                "description": "Узнать вакансии"
+              }
+            }
+          ],
+          "2018": [
+            {
+              "id": 1023,
+              "sort": 112,
+              "name": "M&A: cлияния и поглощения",
+              "previewPicture": {
+                "src": "/upload/iblock/b00/b00ba6389545ad92fc734d1056a1dfc7.png",
+                "width": 1399,
+                "height": 1307,
+                "size": 1097355,
+                "name": "history_1 (1).png"
+              },
+              "year": "2018",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t Компания заключила сотрудничество с пятью студиями в СНГ, положив начало развитию направления M&amp;A. В разработку запущено рекордное количество проектов.\r\n</p>",
+              "link": null
+            },
+            {
+              "id": 1024,
+              "sort": 500,
+              "name": "",
+              "previewPicture": null,
+              "year": "2018",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<h3></h3>\r\n<h3 style=\"text-align: left;\"></h3>\r\n<h3 style=\"text-align: left;\">Мы можем потратить несколько лет на разработку игры. Для нас важно <strong>сделать качественно</strong>, а не&nbsp;быстро.<br>\r\n </h3>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n\t Игорь Бухман, сооснователь Playrix\r\n</p>",
+              "link": null
+            }
+          ],
+          "2017": [
+            {
+              "id": 1209,
+              "sort": 114,
+              "name": "",
+              "previewPicture": null,
+              "year": "2017",
+              "video": null,
+              "youtube": "",
+              "type": "center",
+              "previewText": "<p>\r\n <strong>Playrix — в топ-10</strong> самых успешных игровых разработчиков мира\r\n</p>",
+              "link": null
+            },
+            {
+              "id": 1025,
+              "sort": 116,
+              "name": "Рекорды Homescapes",
+              "previewPicture": null,
+              "year": "2017",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t Проект продолжил историю Остина из Gardenscapes и стал одной из лучших игр года по версии Google Play. Это сделало серию Scapes™ ведущим брендом компании и флагманом рынка match-3.\r\n</p>",
+              "link": {
+                "value": "/games/homescapes",
+                "description": "Homescapes"
+              }
+            }
+          ],
+          "2016": [
+            {
+              "id": 1030,
+              "sort": 126,
+              "name": "Запуск Gardenscapes",
+              "previewPicture": null,
+              "year": "2016",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t Новаторская механика&nbsp;«‎match-3 + история»‎ от Playrix стала настоящим хитом. Проект стал&nbsp;одним из лучших приложений года и лучшей игрой года по версии Facebook.\r\n</p>",
+              "link": {
+                "value": "/games/gardenscapes",
+                "description": "Gardenscapes"
+              }
+            },
+            {
+              "id": 1950,
+              "sort": 128,
+              "name": "",
+              "previewPicture": null,
+              "year": "2016",
+              "video": null,
+              "youtube": "",
+              "type": "center",
+              "previewText": "<p>\r\n\t Разработка&nbsp;первой игры серии&nbsp;<strong><a href=\"games/scapes\">Scapes</a>™</strong>\r\n</p>",
+              "link": null
+            }
+          ],
+          "2015": [
+            {
+              "id": 1032,
+              "sort": 130,
+              "name": "Быстрый успех Fishdom",
+              "previewPicture": null,
+              "year": "2015",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t Playrix продолжает разработку в&nbsp;формате&nbsp;F2P и создает&nbsp;проект в жанре match-3 с механикой метаигры. Игра сразу попала в топ-50 App Store и Google Play.\r\n</p>",
+              "link": {
+                "value": "/games/fishdom",
+                "description": "Fishdom"
+              }
+            }
+          ],
+          "2014": [
+            {
+              "id": 1035,
+              "sort": 136,
+              "name": "",
+              "previewPicture": null,
+              "year": "2014",
+              "video": null,
+              "youtube": "",
+              "type": "center",
+              "previewText": "Playrix начинает работать&nbsp;<strong>удаленно</strong>",
+              "link": null
+            }
+          ],
+          "2013": [
+            {
+              "id": 1037,
+              "sort": 140,
+              "name": "Выход на рынок free-to-play",
+              "previewPicture": {
+                "src": "/upload/iblock/bd6/bd6a9655df41704ce54fba8a6800eda5.png",
+                "width": 3234,
+                "height": 2598,
+                "size": 1890968,
+                "name": "history_2.png"
+              },
+              "year": "2013",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t Непростое решение адаптировать разработку под мобильные&nbsp;платформы&nbsp;принесло отличные результаты. F2P-Township попал в топ-50 App Store и Google Play.\r\n</p>",
+              "link": {
+                "value": "/games/township",
+                "description": "Township"
+              }
+            },
+            {
+              "id": 1038,
+              "sort": 142,
+              "name": "",
+              "previewPicture": null,
+              "year": "2013",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<h3></h3>\r\n<h3 style=\"text-align: left;\"></h3>\r\n<h3 style=\"text-align: left;\">Смена курса — это не признак слабости. Именно способность <strong>поменять видение</strong><b>&nbsp;позволяет добиться успеха‎.&nbsp;<br>\r\n </b></h3>\r\n <b>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n </b>\r\n<p style=\"text-align: left;\">\r\n\t Дима Бухман, сооснователь Playrix\r\n</p>\r\n <b>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n </b>",
+              "link": null
+            }
+          ],
+          "2012": [
+            {
+              "id": 1042,
+              "sort": 150,
+              "name": "Изменение стратегии",
+              "previewPicture": {
+                "src": "/upload/iblock/b74/b745c527941ef7cf6c7515a3675ca09a.png",
+                "width": 1411,
+                "height": 1237,
+                "size": 935522,
+                "name": "ff34837d9f5b9736771663bcec494bc0.png"
+              },
+              "year": "2012",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t Первую «социальную»‎ игру, Township, ждал успех. Но компания решила заморозить это направление в пользу растущего рынка мобильных игр.<br>\r\n</p>",
+              "link": {
+                "value": "/games/township",
+                "description": "Township"
+              }
+            }
+          ],
+          "2010": [
+            {
+              "id": 1043,
+              "sort": 152,
+              "name": "",
+              "previewPicture": null,
+              "year": "2010",
+              "video": null,
+              "youtube": "",
+              "type": "center",
+              "previewText": "Разработка&nbsp;первой игры для <strong>социальных платформ</strong>",
+              "link": null
+            }
+          ],
+          "2009": [
+            {
+              "id": 1045,
+              "sort": 156,
+              "name": "Эпоха РС",
+              "previewPicture": null,
+              "year": "2009",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t За первые несколько лет Playrix выпустил более 20 успешных PC-игр. В это время в компании формируются основные принципы работы и миссия.\r\n</p>",
+              "link": null
+            }
+          ],
+          "2004": [
+            {
+              "id": 1046,
+              "sort": 158,
+              "name": "",
+              "previewPicture": null,
+              "year": "2004",
+              "video": null,
+              "youtube": "",
+              "type": "center",
+              "previewText": "Основание <strong>Playrix</strong>",
+              "link": null
+            },
+            {
+              "id": 1201,
+              "sort": 500,
+              "name": "Все началось с хобби...",
+              "previewPicture": null,
+              "year": "2004",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t Братья Дима и Игорь&nbsp;Бухманы решают превратить свое хобби — разработку игр — в бизнес.\r\n</p>",
+              "link": null
+            }
+          ],
+          "2008": [
+            {
+              "id": 1949,
+              "sort": 500,
+              "name": "Рождение Остина",
+              "previewPicture": null,
+              "year": "2008",
+              "video": null,
+              "youtube": "",
+              "type": "simple",
+              "previewText": "<p>\r\n\t Создан первый концепт дворецкого Остина&nbsp;— в будущем самого узнаваемого персонажа мобильных игр серии&nbsp;Scapes™.\r\n</p>",
+              "link": {
+                "value": "/games/scapes",
+                "description": "Scapes"
+              }
+            }
+          ]
+        }
+      ],
+      "required": [
+        "2020",
+        "2019",
+        "2018",
+        "2017",
+        "2016",
+        "2015",
+        "2014",
+        "2013",
+        "2012",
+        "2010",
+        "2009",
+        "2004",
+        "2008"
+      ],
+      "properties": {
+        "2020": {
+          "$id": "#/properties/items/properties/2020",
+          "type": "array",
+          "title": "The 2020 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1018,
+                "sort": 102,
+                "name": "",
+                "previewPicture": null,
+                "year": "2020",
+                "video": null,
+                "youtube": "",
+                "type": "center",
+                "previewText": "<p>\r\n <strong>Playrix — в топ-3</strong>&nbsp;разработчиков мобильных игр в мире\r\n</p>",
+                "link": null
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2020/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2020/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1018,
+                    "sort": 102,
+                    "name": "",
+                    "previewPicture": null,
+                    "year": "2020",
+                    "video": null,
+                    "youtube": "",
+                    "type": "center",
+                    "previewText": "<p>\r\n <strong>Playrix — в топ-3</strong>&nbsp;разработчиков мобильных игр в мире\r\n</p>",
+                    "link": null
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1018
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      102
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2020"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "center"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n <strong>Playrix — в топ-3</strong>&nbsp;разработчиков мобильных игр в мире\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2020/items/anyOf/0/properties/link",
+                    "type": "null",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2019": {
+          "$id": "#/properties/items/properties/2019",
+          "type": "array",
+          "title": "The 2019 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1020,
+                "sort": 106,
+                "name": "Playrix — крупнейшая игровая компания в СНГ",
+                "previewPicture": null,
+                "year": "2019",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t Благодаря M&amp;A и возможности работать удаленно&nbsp;Playrix стал&nbsp;расти еще быстрее, закрепившись&nbsp;в пятерке лучших игровых компаний в мире.\r\n</p>",
+                "link": {
+                  "value": "/job/open",
+                  "description": "Узнать вакансии"
+                }
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2019/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2019/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1020,
+                    "sort": 106,
+                    "name": "Playrix — крупнейшая игровая компания в СНГ",
+                    "previewPicture": null,
+                    "year": "2019",
+                    "video": null,
+                    "youtube": "",
+                    "type": "simple",
+                    "previewText": "<p>\r\n\t Благодаря M&amp;A и возможности работать удаленно&nbsp;Playrix стал&nbsp;расти еще быстрее, закрепившись&nbsp;в пятерке лучших игровых компаний в мире.\r\n</p>",
+                    "link": {
+                      "value": "/job/open",
+                      "description": "Узнать вакансии"
+                    }
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1020
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      106
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Playrix — крупнейшая игровая компания в СНГ"
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2019"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "simple"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n\t Благодаря M&amp;A и возможности работать удаленно&nbsp;Playrix стал&nbsp;расти еще быстрее, закрепившись&nbsp;в пятерке лучших игровых компаний в мире.\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/link",
+                    "type": "object",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "value": "/job/open",
+                        "description": "Узнать вакансии"
+                      }
+                    ],
+                    "required": [
+                      "value",
+                      "description"
+                    ],
+                    "properties": {
+                      "value": {
+                        "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/link/properties/value",
+                        "type": "string",
+                        "title": "The value schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "/job/open"
+                        ]
+                      },
+                      "description": {
+                        "$id": "#/properties/items/properties/2019/items/anyOf/0/properties/link/properties/description",
+                        "type": "string",
+                        "title": "The description schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "Узнать вакансии"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2018": {
+          "$id": "#/properties/items/properties/2018",
+          "type": "array",
+          "title": "The 2018 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1023,
+                "sort": 112,
+                "name": "M&A: cлияния и поглощения",
+                "previewPicture": {
+                  "src": "/upload/iblock/b00/b00ba6389545ad92fc734d1056a1dfc7.png",
+                  "width": 1399,
+                  "height": 1307,
+                  "size": 1097355,
+                  "name": "history_1 (1).png"
+                },
+                "year": "2018",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t Компания заключила сотрудничество с пятью студиями в СНГ, положив начало развитию направления M&amp;A. В разработку запущено рекордное количество проектов.\r\n</p>",
+                "link": null
+              },
+              {
+                "id": 1024,
+                "sort": 500,
+                "name": "",
+                "previewPicture": null,
+                "year": "2018",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<h3></h3>\r\n<h3 style=\"text-align: left;\"></h3>\r\n<h3 style=\"text-align: left;\">Мы можем потратить несколько лет на разработку игры. Для нас важно <strong>сделать качественно</strong>, а не&nbsp;быстро.<br>\r\n </h3>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n\t Игорь Бухман, сооснователь Playrix\r\n</p>",
+                "link": null
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2018/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2018/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1023,
+                    "sort": 112,
+                    "name": "M&A: cлияния и поглощения",
+                    "previewPicture": {
+                      "src": "/upload/iblock/b00/b00ba6389545ad92fc734d1056a1dfc7.png",
+                      "width": 1399,
+                      "height": 1307,
+                      "size": 1097355,
+                      "name": "history_1 (1).png"
+                    },
+                    "year": "2018",
+                    "video": null,
+                    "youtube": "",
+                    "type": "simple",
+                    "previewText": "<p>\r\n\t Компания заключила сотрудничество с пятью студиями в СНГ, положив начало развитию направления M&amp;A. В разработку запущено рекордное количество проектов.\r\n</p>",
+                    "link": null
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1023
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      112
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "M&A: cлияния и поглощения"
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/previewPicture",
+                    "type": "object",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "src": "/upload/iblock/b00/b00ba6389545ad92fc734d1056a1dfc7.png",
+                        "width": 1399,
+                        "height": 1307,
+                        "size": 1097355,
+                        "name": "history_1 (1).png"
+                      }
+                    ],
+                    "required": [
+                      "src",
+                      "width",
+                      "height",
+                      "size",
+                      "name"
+                    ],
+                    "properties": {
+                      "src": {
+                        "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/previewPicture/properties/src",
+                        "type": "string",
+                        "title": "The src schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "/upload/iblock/b00/b00ba6389545ad92fc734d1056a1dfc7.png"
+                        ]
+                      },
+                      "width": {
+                        "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/previewPicture/properties/width",
+                        "type": "integer",
+                        "title": "The width schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                          1399
+                        ]
+                      },
+                      "height": {
+                        "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/previewPicture/properties/height",
+                        "type": "integer",
+                        "title": "The height schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                          1307
+                        ]
+                      },
+                      "size": {
+                        "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/previewPicture/properties/size",
+                        "type": "integer",
+                        "title": "The size schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                          1097355
+                        ]
+                      },
+                      "name": {
+                        "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/previewPicture/properties/name",
+                        "type": "string",
+                        "title": "The name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "history_1 (1).png"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2018"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "simple"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n\t Компания заключила сотрудничество с пятью студиями в СНГ, положив начало развитию направления M&amp;A. В разработку запущено рекордное количество проектов.\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2018/items/anyOf/0/properties/link",
+                    "type": "null",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2017": {
+          "$id": "#/properties/items/properties/2017",
+          "type": "array",
+          "title": "The 2017 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1209,
+                "sort": 114,
+                "name": "",
+                "previewPicture": null,
+                "year": "2017",
+                "video": null,
+                "youtube": "",
+                "type": "center",
+                "previewText": "<p>\r\n <strong>Playrix — в топ-10</strong> самых успешных игровых разработчиков мира\r\n</p>",
+                "link": null
+              },
+              {
+                "id": 1025,
+                "sort": 116,
+                "name": "Рекорды Homescapes",
+                "previewPicture": null,
+                "year": "2017",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t Проект продолжил историю Остина из Gardenscapes и стал одной из лучших игр года по версии Google Play. Это сделало серию Scapes™ ведущим брендом компании и флагманом рынка match-3.\r\n</p>",
+                "link": {
+                  "value": "/games/homescapes",
+                  "description": "Homescapes"
+                }
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2017/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2017/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1209,
+                    "sort": 114,
+                    "name": "",
+                    "previewPicture": null,
+                    "year": "2017",
+                    "video": null,
+                    "youtube": "",
+                    "type": "center",
+                    "previewText": "<p>\r\n <strong>Playrix — в топ-10</strong> самых успешных игровых разработчиков мира\r\n</p>",
+                    "link": null
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1209
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      114
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2017"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "center"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n <strong>Playrix — в топ-10</strong> самых успешных игровых разработчиков мира\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2017/items/anyOf/0/properties/link",
+                    "type": "null",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2016": {
+          "$id": "#/properties/items/properties/2016",
+          "type": "array",
+          "title": "The 2016 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1030,
+                "sort": 126,
+                "name": "Запуск Gardenscapes",
+                "previewPicture": null,
+                "year": "2016",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t Новаторская механика&nbsp;«‎match-3 + история»‎ от Playrix стала настоящим хитом. Проект стал&nbsp;одним из лучших приложений года и лучшей игрой года по версии Facebook.\r\n</p>",
+                "link": {
+                  "value": "/games/gardenscapes",
+                  "description": "Gardenscapes"
+                }
+              },
+              {
+                "id": 1950,
+                "sort": 128,
+                "name": "",
+                "previewPicture": null,
+                "year": "2016",
+                "video": null,
+                "youtube": "",
+                "type": "center",
+                "previewText": "<p>\r\n\t Разработка&nbsp;первой игры серии&nbsp;<strong><a href=\"games/scapes\">Scapes</a>™</strong>\r\n</p>",
+                "link": null
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2016/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2016/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1030,
+                    "sort": 126,
+                    "name": "Запуск Gardenscapes",
+                    "previewPicture": null,
+                    "year": "2016",
+                    "video": null,
+                    "youtube": "",
+                    "type": "simple",
+                    "previewText": "<p>\r\n\t Новаторская механика&nbsp;«‎match-3 + история»‎ от Playrix стала настоящим хитом. Проект стал&nbsp;одним из лучших приложений года и лучшей игрой года по версии Facebook.\r\n</p>",
+                    "link": {
+                      "value": "/games/gardenscapes",
+                      "description": "Gardenscapes"
+                    }
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1030
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      126
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Запуск Gardenscapes"
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2016"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "simple"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n\t Новаторская механика&nbsp;«‎match-3 + история»‎ от Playrix стала настоящим хитом. Проект стал&nbsp;одним из лучших приложений года и лучшей игрой года по версии Facebook.\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/link",
+                    "type": "object",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "value": "/games/gardenscapes",
+                        "description": "Gardenscapes"
+                      }
+                    ],
+                    "required": [
+                      "value",
+                      "description"
+                    ],
+                    "properties": {
+                      "value": {
+                        "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/link/properties/value",
+                        "type": "string",
+                        "title": "The value schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "/games/gardenscapes"
+                        ]
+                      },
+                      "description": {
+                        "$id": "#/properties/items/properties/2016/items/anyOf/0/properties/link/properties/description",
+                        "type": "string",
+                        "title": "The description schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "Gardenscapes"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2015": {
+          "$id": "#/properties/items/properties/2015",
+          "type": "array",
+          "title": "The 2015 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1032,
+                "sort": 130,
+                "name": "Быстрый успех Fishdom",
+                "previewPicture": null,
+                "year": "2015",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t Playrix продолжает разработку в&nbsp;формате&nbsp;F2P и создает&nbsp;проект в жанре match-3 с механикой метаигры. Игра сразу попала в топ-50 App Store и Google Play.\r\n</p>",
+                "link": {
+                  "value": "/games/fishdom",
+                  "description": "Fishdom"
+                }
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2015/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2015/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1032,
+                    "sort": 130,
+                    "name": "Быстрый успех Fishdom",
+                    "previewPicture": null,
+                    "year": "2015",
+                    "video": null,
+                    "youtube": "",
+                    "type": "simple",
+                    "previewText": "<p>\r\n\t Playrix продолжает разработку в&nbsp;формате&nbsp;F2P и создает&nbsp;проект в жанре match-3 с механикой метаигры. Игра сразу попала в топ-50 App Store и Google Play.\r\n</p>",
+                    "link": {
+                      "value": "/games/fishdom",
+                      "description": "Fishdom"
+                    }
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1032
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      130
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Быстрый успех Fishdom"
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2015"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "simple"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n\t Playrix продолжает разработку в&nbsp;формате&nbsp;F2P и создает&nbsp;проект в жанре match-3 с механикой метаигры. Игра сразу попала в топ-50 App Store и Google Play.\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/link",
+                    "type": "object",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "value": "/games/fishdom",
+                        "description": "Fishdom"
+                      }
+                    ],
+                    "required": [
+                      "value",
+                      "description"
+                    ],
+                    "properties": {
+                      "value": {
+                        "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/link/properties/value",
+                        "type": "string",
+                        "title": "The value schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "/games/fishdom"
+                        ]
+                      },
+                      "description": {
+                        "$id": "#/properties/items/properties/2015/items/anyOf/0/properties/link/properties/description",
+                        "type": "string",
+                        "title": "The description schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "Fishdom"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2014": {
+          "$id": "#/properties/items/properties/2014",
+          "type": "array",
+          "title": "The 2014 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1035,
+                "sort": 136,
+                "name": "",
+                "previewPicture": null,
+                "year": "2014",
+                "video": null,
+                "youtube": "",
+                "type": "center",
+                "previewText": "Playrix начинает работать&nbsp;<strong>удаленно</strong>",
+                "link": null
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2014/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2014/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1035,
+                    "sort": 136,
+                    "name": "",
+                    "previewPicture": null,
+                    "year": "2014",
+                    "video": null,
+                    "youtube": "",
+                    "type": "center",
+                    "previewText": "Playrix начинает работать&nbsp;<strong>удаленно</strong>",
+                    "link": null
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1035
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      136
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2014"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "center"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Playrix начинает работать&nbsp;<strong>удаленно</strong>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2014/items/anyOf/0/properties/link",
+                    "type": "null",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2013": {
+          "$id": "#/properties/items/properties/2013",
+          "type": "array",
+          "title": "The 2013 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1037,
+                "sort": 140,
+                "name": "Выход на рынок free-to-play",
+                "previewPicture": {
+                  "src": "/upload/iblock/bd6/bd6a9655df41704ce54fba8a6800eda5.png",
+                  "width": 3234,
+                  "height": 2598,
+                  "size": 1890968,
+                  "name": "history_2.png"
+                },
+                "year": "2013",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t Непростое решение адаптировать разработку под мобильные&nbsp;платформы&nbsp;принесло отличные результаты. F2P-Township попал в топ-50 App Store и Google Play.\r\n</p>",
+                "link": {
+                  "value": "/games/township",
+                  "description": "Township"
+                }
+              },
+              {
+                "id": 1038,
+                "sort": 142,
+                "name": "",
+                "previewPicture": null,
+                "year": "2013",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<h3></h3>\r\n<h3 style=\"text-align: left;\"></h3>\r\n<h3 style=\"text-align: left;\">Смена курса — это не признак слабости. Именно способность <strong>поменять видение</strong><b>&nbsp;позволяет добиться успеха‎.&nbsp;<br>\r\n </b></h3>\r\n <b>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n </b>\r\n<p style=\"text-align: left;\">\r\n\t Дима Бухман, сооснователь Playrix\r\n</p>\r\n <b>\r\n<p style=\"text-align: left;\">\r\n</p>\r\n </b>",
+                "link": null
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2013/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2013/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1037,
+                    "sort": 140,
+                    "name": "Выход на рынок free-to-play",
+                    "previewPicture": {
+                      "src": "/upload/iblock/bd6/bd6a9655df41704ce54fba8a6800eda5.png",
+                      "width": 3234,
+                      "height": 2598,
+                      "size": 1890968,
+                      "name": "history_2.png"
+                    },
+                    "year": "2013",
+                    "video": null,
+                    "youtube": "",
+                    "type": "simple",
+                    "previewText": "<p>\r\n\t Непростое решение адаптировать разработку под мобильные&nbsp;платформы&nbsp;принесло отличные результаты. F2P-Township попал в топ-50 App Store и Google Play.\r\n</p>",
+                    "link": {
+                      "value": "/games/township",
+                      "description": "Township"
+                    }
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1037
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      140
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Выход на рынок free-to-play"
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/previewPicture",
+                    "type": "object",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "src": "/upload/iblock/bd6/bd6a9655df41704ce54fba8a6800eda5.png",
+                        "width": 3234,
+                        "height": 2598,
+                        "size": 1890968,
+                        "name": "history_2.png"
+                      }
+                    ],
+                    "required": [
+                      "src",
+                      "width",
+                      "height",
+                      "size",
+                      "name"
+                    ],
+                    "properties": {
+                      "src": {
+                        "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/previewPicture/properties/src",
+                        "type": "string",
+                        "title": "The src schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "/upload/iblock/bd6/bd6a9655df41704ce54fba8a6800eda5.png"
+                        ]
+                      },
+                      "width": {
+                        "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/previewPicture/properties/width",
+                        "type": "integer",
+                        "title": "The width schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                          3234
+                        ]
+                      },
+                      "height": {
+                        "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/previewPicture/properties/height",
+                        "type": "integer",
+                        "title": "The height schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                          2598
+                        ]
+                      },
+                      "size": {
+                        "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/previewPicture/properties/size",
+                        "type": "integer",
+                        "title": "The size schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                          1890968
+                        ]
+                      },
+                      "name": {
+                        "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/previewPicture/properties/name",
+                        "type": "string",
+                        "title": "The name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "history_2.png"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2013"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "simple"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n\t Непростое решение адаптировать разработку под мобильные&nbsp;платформы&nbsp;принесло отличные результаты. F2P-Township попал в топ-50 App Store и Google Play.\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/link",
+                    "type": "object",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "value": "/games/township",
+                        "description": "Township"
+                      }
+                    ],
+                    "required": [
+                      "value",
+                      "description"
+                    ],
+                    "properties": {
+                      "value": {
+                        "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/link/properties/value",
+                        "type": "string",
+                        "title": "The value schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "/games/township"
+                        ]
+                      },
+                      "description": {
+                        "$id": "#/properties/items/properties/2013/items/anyOf/0/properties/link/properties/description",
+                        "type": "string",
+                        "title": "The description schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "Township"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2012": {
+          "$id": "#/properties/items/properties/2012",
+          "type": "array",
+          "title": "The 2012 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1042,
+                "sort": 150,
+                "name": "Изменение стратегии",
+                "previewPicture": {
+                  "src": "/upload/iblock/b74/b745c527941ef7cf6c7515a3675ca09a.png",
+                  "width": 1411,
+                  "height": 1237,
+                  "size": 935522,
+                  "name": "ff34837d9f5b9736771663bcec494bc0.png"
+                },
+                "year": "2012",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t Первую «социальную»‎ игру, Township, ждал успех. Но компания решила заморозить это направление в пользу растущего рынка мобильных игр.<br>\r\n</p>",
+                "link": {
+                  "value": "/games/township",
+                  "description": "Township"
+                }
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2012/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2012/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1042,
+                    "sort": 150,
+                    "name": "Изменение стратегии",
+                    "previewPicture": {
+                      "src": "/upload/iblock/b74/b745c527941ef7cf6c7515a3675ca09a.png",
+                      "width": 1411,
+                      "height": 1237,
+                      "size": 935522,
+                      "name": "ff34837d9f5b9736771663bcec494bc0.png"
+                    },
+                    "year": "2012",
+                    "video": null,
+                    "youtube": "",
+                    "type": "simple",
+                    "previewText": "<p>\r\n\t Первую «социальную»‎ игру, Township, ждал успех. Но компания решила заморозить это направление в пользу растущего рынка мобильных игр.<br>\r\n</p>",
+                    "link": {
+                      "value": "/games/township",
+                      "description": "Township"
+                    }
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1042
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      150
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Изменение стратегии"
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/previewPicture",
+                    "type": "object",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "src": "/upload/iblock/b74/b745c527941ef7cf6c7515a3675ca09a.png",
+                        "width": 1411,
+                        "height": 1237,
+                        "size": 935522,
+                        "name": "ff34837d9f5b9736771663bcec494bc0.png"
+                      }
+                    ],
+                    "required": [
+                      "src",
+                      "width",
+                      "height",
+                      "size",
+                      "name"
+                    ],
+                    "properties": {
+                      "src": {
+                        "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/previewPicture/properties/src",
+                        "type": "string",
+                        "title": "The src schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "/upload/iblock/b74/b745c527941ef7cf6c7515a3675ca09a.png"
+                        ]
+                      },
+                      "width": {
+                        "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/previewPicture/properties/width",
+                        "type": "integer",
+                        "title": "The width schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                          1411
+                        ]
+                      },
+                      "height": {
+                        "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/previewPicture/properties/height",
+                        "type": "integer",
+                        "title": "The height schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                          1237
+                        ]
+                      },
+                      "size": {
+                        "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/previewPicture/properties/size",
+                        "type": "integer",
+                        "title": "The size schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                          935522
+                        ]
+                      },
+                      "name": {
+                        "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/previewPicture/properties/name",
+                        "type": "string",
+                        "title": "The name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "ff34837d9f5b9736771663bcec494bc0.png"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2012"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "simple"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n\t Первую «социальную»‎ игру, Township, ждал успех. Но компания решила заморозить это направление в пользу растущего рынка мобильных игр.<br>\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/link",
+                    "type": "object",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "value": "/games/township",
+                        "description": "Township"
+                      }
+                    ],
+                    "required": [
+                      "value",
+                      "description"
+                    ],
+                    "properties": {
+                      "value": {
+                        "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/link/properties/value",
+                        "type": "string",
+                        "title": "The value schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "/games/township"
+                        ]
+                      },
+                      "description": {
+                        "$id": "#/properties/items/properties/2012/items/anyOf/0/properties/link/properties/description",
+                        "type": "string",
+                        "title": "The description schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "Township"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2010": {
+          "$id": "#/properties/items/properties/2010",
+          "type": "array",
+          "title": "The 2010 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1043,
+                "sort": 152,
+                "name": "",
+                "previewPicture": null,
+                "year": "2010",
+                "video": null,
+                "youtube": "",
+                "type": "center",
+                "previewText": "Разработка&nbsp;первой игры для <strong>социальных платформ</strong>",
+                "link": null
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2010/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2010/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1043,
+                    "sort": 152,
+                    "name": "",
+                    "previewPicture": null,
+                    "year": "2010",
+                    "video": null,
+                    "youtube": "",
+                    "type": "center",
+                    "previewText": "Разработка&nbsp;первой игры для <strong>социальных платформ</strong>",
+                    "link": null
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1043
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      152
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2010"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "center"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Разработка&nbsp;первой игры для <strong>социальных платформ</strong>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2010/items/anyOf/0/properties/link",
+                    "type": "null",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2009": {
+          "$id": "#/properties/items/properties/2009",
+          "type": "array",
+          "title": "The 2009 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1045,
+                "sort": 156,
+                "name": "Эпоха РС",
+                "previewPicture": null,
+                "year": "2009",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t За первые несколько лет Playrix выпустил более 20 успешных PC-игр. В это время в компании формируются основные принципы работы и миссия.\r\n</p>",
+                "link": null
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2009/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2009/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1045,
+                    "sort": 156,
+                    "name": "Эпоха РС",
+                    "previewPicture": null,
+                    "year": "2009",
+                    "video": null,
+                    "youtube": "",
+                    "type": "simple",
+                    "previewText": "<p>\r\n\t За первые несколько лет Playrix выпустил более 20 успешных PC-игр. В это время в компании формируются основные принципы работы и миссия.\r\n</p>",
+                    "link": null
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1045
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      156
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Эпоха РС"
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2009"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "simple"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n\t За первые несколько лет Playrix выпустил более 20 успешных PC-игр. В это время в компании формируются основные принципы работы и миссия.\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2009/items/anyOf/0/properties/link",
+                    "type": "null",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2004": {
+          "$id": "#/properties/items/properties/2004",
+          "type": "array",
+          "title": "The 2004 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1046,
+                "sort": 158,
+                "name": "",
+                "previewPicture": null,
+                "year": "2004",
+                "video": null,
+                "youtube": "",
+                "type": "center",
+                "previewText": "Основание <strong>Playrix</strong>",
+                "link": null
+              },
+              {
+                "id": 1201,
+                "sort": 500,
+                "name": "Все началось с хобби...",
+                "previewPicture": null,
+                "year": "2004",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t Братья Дима и Игорь&nbsp;Бухманы решают превратить свое хобби — разработку игр — в бизнес.\r\n</p>",
+                "link": null
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2004/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2004/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1046,
+                    "sort": 158,
+                    "name": "",
+                    "previewPicture": null,
+                    "year": "2004",
+                    "video": null,
+                    "youtube": "",
+                    "type": "center",
+                    "previewText": "Основание <strong>Playrix</strong>",
+                    "link": null
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1046
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      158
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2004"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "center"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Основание <strong>Playrix</strong>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2004/items/anyOf/0/properties/link",
+                    "type": "null",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "2008": {
+          "$id": "#/properties/items/properties/2008",
+          "type": "array",
+          "title": "The 2008 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "id": 1949,
+                "sort": 500,
+                "name": "Рождение Остина",
+                "previewPicture": null,
+                "year": "2008",
+                "video": null,
+                "youtube": "",
+                "type": "simple",
+                "previewText": "<p>\r\n\t Создан первый концепт дворецкого Остина&nbsp;— в будущем самого узнаваемого персонажа мобильных игр серии&nbsp;Scapes™.\r\n</p>",
+                "link": {
+                  "value": "/games/scapes",
+                  "description": "Scapes"
+                }
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/items/properties/2008/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/items/properties/2008/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "id": 1949,
+                    "sort": 500,
+                    "name": "Рождение Остина",
+                    "previewPicture": null,
+                    "year": "2008",
+                    "video": null,
+                    "youtube": "",
+                    "type": "simple",
+                    "previewText": "<p>\r\n\t Создан первый концепт дворецкого Остина&nbsp;— в будущем самого узнаваемого персонажа мобильных игр серии&nbsp;Scapes™.\r\n</p>",
+                    "link": {
+                      "value": "/games/scapes",
+                      "description": "Scapes"
+                    }
+                  }
+                ],
+                "required": [
+                  "id",
+                  "sort",
+                  "name",
+                  "previewPicture",
+                  "year",
+                  "video",
+                  "youtube",
+                  "type",
+                  "previewText",
+                  "link"
+                ],
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1949
+                    ]
+                  },
+                  "sort": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/sort",
+                    "type": "integer",
+                    "title": "The sort schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      500
+                    ]
+                  },
+                  "name": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Рождение Остина"
+                    ]
+                  },
+                  "previewPicture": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/previewPicture",
+                    "type": "null",
+                    "title": "The previewPicture schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "year": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/year",
+                    "type": "string",
+                    "title": "The year schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2008"
+                    ]
+                  },
+                  "video": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/video",
+                    "type": "null",
+                    "title": "The video schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "youtube": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/youtube",
+                    "type": "string",
+                    "title": "The youtube schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "type": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/type",
+                    "type": "string",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "simple"
+                    ]
+                  },
+                  "previewText": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/previewText",
+                    "type": "string",
+                    "title": "The previewText schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "<p>\r\n\t Создан первый концепт дворецкого Остина&nbsp;— в будущем самого узнаваемого персонажа мобильных игр серии&nbsp;Scapes™.\r\n</p>"
+                    ]
+                  },
+                  "link": {
+                    "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/link",
+                    "type": "object",
+                    "title": "The link schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "value": "/games/scapes",
+                        "description": "Scapes"
+                      }
+                    ],
+                    "required": [
+                      "value",
+                      "description"
+                    ],
+                    "properties": {
+                      "value": {
+                        "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/link/properties/value",
+                        "type": "string",
+                        "title": "The value schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "/games/scapes"
+                        ]
+                      },
+                      "description": {
+                        "$id": "#/properties/items/properties/2008/items/anyOf/0/properties/link/properties/description",
+                        "type": "string",
+                        "title": "The description schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "Scapes"
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "debug": {
+      "$id": "#/properties/debug",
+      "type": "object",
+      "title": "The debug schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "run_time": 0,
+          "sql": {
+            "time": 0,
+            "count": null,
+            "queries": null
+          },
+          "cache": {
+            "type": null,
+            "size": null
+          },
+          "php": ""
+        }
+      ],
+      "required": [
+        "run_time",
+        "sql",
+        "cache",
+        "php"
+      ],
+      "properties": {
+        "run_time": {
+          "$id": "#/properties/debug/properties/run_time",
+          "type": "integer",
+          "title": "The run_time schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "sql": {
+          "$id": "#/properties/debug/properties/sql",
+          "type": "object",
+          "title": "The sql schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "time": 0,
+              "count": null,
+              "queries": null
+            }
+          ],
+          "required": [
+            "time",
+            "count",
+            "queries"
+          ],
+          "properties": {
+            "time": {
+              "$id": "#/properties/debug/properties/sql/properties/time",
+              "type": "integer",
+              "title": "The time schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "count": {
+              "$id": "#/properties/debug/properties/sql/properties/count",
+              "type": "null",
+              "title": "The count schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "queries": {
+              "$id": "#/properties/debug/properties/sql/properties/queries",
+              "type": "null",
+              "title": "The queries schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": null,
+              "examples": [
+                null
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "cache": {
+          "$id": "#/properties/debug/properties/cache",
+          "type": "object",
+          "title": "The cache schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "type": null,
+              "size": null
+            }
+          ],
+          "required": [
+            "type",
+            "size"
+          ],
+          "properties": {
+            "type": {
+              "$id": "#/properties/debug/properties/cache/properties/type",
+              "type": "null",
+              "title": "The type schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "size": {
+              "$id": "#/properties/debug/properties/cache/properties/size",
+              "type": "null",
+              "title": "The size schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": null,
+              "examples": [
+                null
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "php": {
+          "$id": "#/properties/debug/properties/php",
+          "type": "string",
+          "title": "The php schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

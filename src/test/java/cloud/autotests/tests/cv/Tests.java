@@ -11,11 +11,9 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -209,6 +207,12 @@ public class Tests extends TestBase {
     @DisplayName("API sampling test: check the fields at page\"\"History\"")
     void apiHistoryPageFieldsTest() {
         open();
+//        Specs.request
+//                .when()
+//                .get("https://playrix.com/api/v1/index.php?historyPage/getList")
+//                .then()
+//                //.extract().as(History2004Schema.class);
+//                .body(matchesJsonSchemaInClasspath("jsonschemas/HistorySchema.json"));
         Specs.request
                 .when()
                 .get("https://playrix.com/api/v1/index.php?historyPage/getList")
