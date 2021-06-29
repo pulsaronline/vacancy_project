@@ -17,7 +17,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import static cloud.autotests.tests.cv.TestData.getApiUrl;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
