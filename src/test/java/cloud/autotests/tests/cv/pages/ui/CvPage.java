@@ -1,6 +1,7 @@
 package cloud.autotests.tests.cv.pages.ui;
 
 import static cloud.autotests.tests.TestBase.BASEURL;
+import static cloud.autotests.tests.TestBase.checkLocale;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -47,6 +48,7 @@ public class CvPage {
     public static void openCvPage(){
         //open("https://job.playrix.com/");
         open(BASEURL);
+        checkLocale();
         $(byText("Карьера")).click();
         sleep(300);
         $(byText("Вакансии")).click();

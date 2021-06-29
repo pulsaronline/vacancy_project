@@ -11,8 +11,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import static cloud.autotests.helpers.AttachmentsHelper.*;
 import static cloud.autotests.helpers.DriverHelper.*;
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 
 @ExtendWith({AllureJunit5.class})
@@ -21,8 +23,10 @@ public class TestBase {
 
     @BeforeAll
     static void setUp() {
+        configureDriver();
         RestAssured.baseURI = TestData.getApiUrl();
         Configuration.baseUrl = TestData.getWebUrl();
+        Configuration.startMaximized = true;
     }
 
     @AfterEach
@@ -31,15 +35,19 @@ public class TestBase {
 
         attachScreenshot("Last screenshot");
         attachPageSource();
-//        attachNetwork(); // todo
         attachAsText("Browser console logs", getConsoleLogs());
 
         closeWebDriver();
         if (isVideoOn()) attachVideo(sessionId);
     }
 
-    @Test
+    public static void checkLocale(){
+        if($(".header__menu.main-menu").shouldHave(text("RU")).isDisplayed()) {
+            $(byText("RU")).click();
+        }
+    }
+
     public static void acceptCookies(){
-        $(byText("Принять")).click();
+        $$(".popup-cookies__btn.btn.btn--green").findBy(text("Принять")).click();
     }
 }

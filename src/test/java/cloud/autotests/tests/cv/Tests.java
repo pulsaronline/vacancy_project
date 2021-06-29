@@ -9,8 +9,12 @@ import cloud.autotests.tests.cv.pages.ui.MainPage;
 import cloud.autotests.tests.cv.pages.ui.VacancyPage;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
+import io.restassured.RestAssured;
 import org.junit.jupiter.api.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
+import static cloud.autotests.tests.cv.TestData.getApiUrl;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -28,7 +32,6 @@ public class Tests extends TestBase {
     void mainPageUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open main page", MainPage::openMainPage);
-        step("Open main page", MainPage::checkLocale);
         step("Accept cookies", TestBase::acceptCookies);
         step("Check company logo", MainPage::checkTheLogo);
         step("Check top menu", MainPage::checkTopMenu);
@@ -47,7 +50,6 @@ public class Tests extends TestBase {
     void vacancyPageUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open vacancy page", VacancyPage::openVacancyPage);
-        step("Open main page", MainPage::checkLocale);
         step("Accept cookies", TestBase::acceptCookies);
         step("Check company logo", MainPage::checkTheLogo);
         step("Check top menu", MainPage::checkTopMenu);
@@ -65,7 +67,6 @@ public class Tests extends TestBase {
     void cvPageFillAndCheckUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open target page", CvPage::openCvPage);
-        step("Open main page", MainPage::checkLocale);
         step("Accept cookies", TestBase::acceptCookies);
         step("Open the form", CvPage::openPageForm);
         step("Type First and Last names", CvPage::typeName);
@@ -92,11 +93,13 @@ public class Tests extends TestBase {
     @Tag("api")
     @DisplayName("API sampling test: check the fields and error messages at page\"\"QA Engineer, Engine\"")
     void apiCarrierQAEngineerPageFieldsAndErrorMessagesTest() {
-        open();
+        //open();
         Specs.request
+                .log().uri()
                 .when()
                 .get("/api/v1/index.php?vacancyFormBuilder/getList")
                 .then()
+                //.log().body()
                 // name, surname and error message fields check
                 .body("items[0].id", is(1056))
                 .body("items[0].name", is("Фамилия и имя"))
@@ -209,13 +212,7 @@ public class Tests extends TestBase {
     @Tag("api")
     @DisplayName("API sampling test: check the fields at page\"\"History\"")
     void apiHistoryPageFieldsTest() {
-        open();
-//        Specs.request
-//                .when()
-//                .get("https://playrix.com/api/v1/index.php?historyPage/getList")
-//                .then()
-//                //.extract().as(History2004Schema.class);
-//                .body(matchesJsonSchemaInClasspath("jsonschemas/HistorySchema.json"));
+        //open();
         Specs.request
                 .when()
                 .get("https://playrix.com/api/v1/index.php?historyPage/getList")

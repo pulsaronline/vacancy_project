@@ -1,6 +1,7 @@
 package cloud.autotests.tests.cv.pages.ui;
 
 import static cloud.autotests.tests.TestBase.BASEURL;
+import static cloud.autotests.tests.TestBase.checkLocale;
 import static cloud.autotests.tests.cv.pages.ui.MainPage.*;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
@@ -9,6 +10,7 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class VacancyPage {
     static String
+            vacancyPageUrl = "https://playrix.com/job/open",
             // SELECTORS
             // header selectors
             headerVacanciesButtonSelector = "Вакансии",
@@ -159,9 +161,12 @@ public class VacancyPage {
 
     public static void openVacancyPage() {
         open(BASEURL);
+        checkLocale();
+//        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo();
+//        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
+//        $(byText(headerVacanciesButtonSelector)).click();
         $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).hover();
-        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
-        $(byText(headerVacanciesButtonSelector)).click();
+        $(byText(headerVacanciesSubMenuName)).click();
     }
 
     public static void headerVacanciesCheck() {

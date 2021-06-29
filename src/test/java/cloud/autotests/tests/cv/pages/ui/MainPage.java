@@ -4,9 +4,11 @@ import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.conditions.Text;
 import org.openqa.selenium.By;
 
 import static cloud.autotests.tests.TestBase.BASEURL;
+import static cloud.autotests.tests.TestBase.checkLocale;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
@@ -19,10 +21,9 @@ public class MainPage {
             headerCompanyMenuName = "Компания",
             headerCarrierMenuName = "Карьера",
             headerLocaleMenuNameEn = "EN",
-            headerLocaleMenuNameRu = "RU",
             headerHistorySubMenuName = "История",
             headerVacanciesSubMenuName = "Вакансии",
-            headerMenuSelector =".main-menu__link",
+            headerMenuSelector = ".header__menu.main-menu",
             headerMenuSearchSelector =".main-menu__search-icon--hover",
             headerSubmenuSelector = ".main-menu__sub-item",
             headerLogoMenuSelector = ".header__logo-img",
@@ -75,16 +76,11 @@ public class MainPage {
 
     public static void openMainPage(){
         open(BASEURL);
-    }
-
-    public static void checkLocale(){
-        if($$(headerMenuSelector).contains(headerLocaleMenuNameRu)) {
-            $$(headerMenuSelector).findBy(text(headerLocaleMenuNameRu)).hover().click();
-        }
+        checkLocale();
     }
 
     public static void checkTheLogo() {
-        $(headerLogoMenuSelector).should(exist).shouldBe(Condition.visible);
+        $(headerLogoMenuSelector).scrollTo().should(exist).shouldBe(Condition.visible);
         $(headerMenuSearchSelector).should(exist);
     }
 
@@ -99,11 +95,10 @@ public class MainPage {
     }
 
     public static void checkTopMenuSubmenus(){
-        $$(headerMenuSelector).findBy(text(headerGamesMenuName)).should(exist).shouldBe(Condition.visible);
-        $$(headerMenuSelector).findBy(text(headerCompanyMenuName)).hover();
-        $$(headerSubmenuSelector).findBy(text(headerHistorySubMenuName)).should(exist);
+        $$(headerMenuSelector).findBy(text(headerCompanyMenuName)).scrollTo().hover();
+        $(byText(headerHistorySubMenuName)).should(exist);
         $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).hover();
-        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
+        $(byText(headerVacanciesSubMenuName)).should(exist);
     }
 
     public static void checkHeaderImages(){
