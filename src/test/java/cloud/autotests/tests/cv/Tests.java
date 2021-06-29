@@ -28,6 +28,7 @@ public class Tests extends TestBase {
     void mainPageUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open main page", MainPage::openMainPage);
+        step("Open main page", MainPage::checkLocale);
         step("Accept cookies", TestBase::acceptCookies);
         step("Check company logo", MainPage::checkTheLogo);
         step("Check top menu", MainPage::checkTopMenu);
@@ -46,6 +47,7 @@ public class Tests extends TestBase {
     void vacancyPageUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open vacancy page", VacancyPage::openVacancyPage);
+        step("Open main page", MainPage::checkLocale);
         step("Accept cookies", TestBase::acceptCookies);
         step("Check company logo", MainPage::checkTheLogo);
         step("Check top menu", MainPage::checkTopMenu);
@@ -63,6 +65,7 @@ public class Tests extends TestBase {
     void cvPageFillAndCheckUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open target page", CvPage::openCvPage);
+        step("Open main page", MainPage::checkLocale);
         step("Accept cookies", TestBase::acceptCookies);
         step("Open the form", CvPage::openPageForm);
         step("Type First and Last names", CvPage::typeName);

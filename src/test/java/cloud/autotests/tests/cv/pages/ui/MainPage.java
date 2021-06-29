@@ -18,7 +18,8 @@ public class MainPage {
             headerGamesMenuName = "Игры",
             headerCompanyMenuName = "Компания",
             headerCarrierMenuName = "Карьера",
-            headerLocaleMenuName = "EN",
+            headerLocaleMenuNameEn = "EN",
+            headerLocaleMenuNameRu = "RU",
             headerHistorySubMenuName = "История",
             headerVacanciesSubMenuName = "Вакансии",
             headerMenuSelector =".main-menu__link",
@@ -76,6 +77,12 @@ public class MainPage {
         open(BASEURL);
     }
 
+    public static void checkLocale(){
+        if($(headerNavbarSelector).toString().contains(headerLocaleMenuNameRu)) {
+            $$(headerNavbarSelector).findBy(text(headerLocaleMenuNameRu)).hover().click();
+        }
+    }
+
     public static void checkTheLogo() {
         $(headerLogoMenuSelector).should(exist).shouldBe(Condition.visible);
         $(headerMenuSearchSelector).should(exist);
@@ -87,7 +94,7 @@ public class MainPage {
                 text(headerGamesMenuName),
                 text(headerCompanyMenuName),
                 text(headerCarrierMenuName),
-                text(headerLocaleMenuName));
+                text(headerLocaleMenuNameEn));
         $(headerLogoMenuSelector).should(exist).shouldBe(Condition.visible);
     }
 
