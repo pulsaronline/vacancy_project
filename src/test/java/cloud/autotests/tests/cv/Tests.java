@@ -92,7 +92,7 @@ public class Tests extends TestBase {
     @Tag("api")
     @DisplayName("API sampling test: check the fields and error messages at page\"\"QA Engineer, Engine\"")
     void apiCarrierQAEngineerPageFieldsAndErrorMessagesTest() {
-        //open();
+        open();
         Specs.request
                 .log().uri()
                 .when()
