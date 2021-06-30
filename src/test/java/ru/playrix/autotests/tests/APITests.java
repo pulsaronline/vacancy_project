@@ -1,105 +1,26 @@
-package cloud.autotests.tests.cv;
+package ru.playrix.autotests.tests;
 
-import cloud.autotests.helpers.DriverHelper;
-import cloud.autotests.tests.TestBase;
-import cloud.autotests.tests.cv.pages.api.Specs;
-import cloud.autotests.tests.cv.pages.ui.CvPage;
-import cloud.autotests.tests.cv.pages.ui.MainPage;
-
-import cloud.autotests.tests.cv.pages.ui.VacancyPage;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
-import io.restassured.RestAssured;
-import org.junit.jupiter.api.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+import ru.playrix.autotests.helpers.api.Specs;
 
-import static cloud.autotests.tests.cv.TestData.getApiUrl;
-import static com.codeborne.selenide.Selenide.open;
-import static io.qameta.allure.Allure.step;
-import static io.restassured.RestAssured.given;
-import static io.restassured.http.ContentType.JSON;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.Matchers.is;
 
-@Story("job.playrix.com tests")
-public class Tests extends TestBase {
-
-    @Test
-    @Owner("BessudnovMaksim")
-    @Tag("ui")
-    @DisplayName("UI sampling test: Check items on the main page")
-    void mainPageUITest() {
-        step("Init web driver", DriverHelper::configureDriver);
-        step("Open main page", MainPage::openMainPage);
-        step("Accept cookies", TestBase::acceptCookies);
-        step("Check company logo", MainPage::checkTheLogo);
-        step("Check top menu", MainPage::checkTopMenu);
-        step("Check top menu submenus", MainPage::checkTopMenuSubmenus);
-        step("Check header images", MainPage::checkHeaderImages);
-        step("Check games", MainPage::checkGames);
-        step("Check footer menu", MainPage::checkFooterMenu);
-        step("Check social buttons", MainPage::checkSocialButtons);
-        step("Check copyright", MainPage::checkCopyright);
-    }
-
-    @Test
-    @Owner("BessudnovMaksim")
-    @Tag("ui")
-    @DisplayName("UI sampling test: Check items on the vacancies page")
-    void vacancyPageUITest() {
-        step("Init web driver", DriverHelper::configureDriver);
-        step("Open vacancy page", VacancyPage::openVacancyPage);
-        step("Accept cookies", TestBase::acceptCookies);
-        step("Check company logo", MainPage::checkTheLogo);
-        step("Check top menu", MainPage::checkTopMenu);
-        step("Check footer menu", MainPage::checkFooterMenu);
-        step("Check header vacancies menu", VacancyPage::headerVacanciesCheck);
-        step("Check body tags of the vacancies", VacancyPage::bodyVacanciesTagCheck);
-        step("Check body names of the vacancies", VacancyPage::bodyVacanciesNamesCheck);
-        step("Check footer FAQ section", VacancyPage::footerFaqSectionCheck);
-    }
-
-    @Test
-    @Owner("BessudnovMaksim")
-    @Tag("ui")
-    @DisplayName("UI sampling test: Fill, check and submit the vacancy form")
-    void cvPageFillAndCheckUITest() {
-        step("Init web driver", DriverHelper::configureDriver);
-        step("Open target page", CvPage::openCvPage);
-        step("Accept cookies", TestBase::acceptCookies);
-        step("Open the form", CvPage::openPageForm);
-        step("Type First and Last names", CvPage::typeName);
-        step("Type email", CvPage::typeEmail);
-        step("Type skype id", CvPage::typeScype);
-        step("Type city", CvPage::typeCity);
-        step("Type desired salary", CvPage::typeSalary);
-        step("Click checkboxes", CvPage::clickCheckboxes);
-        step("Type where do i know about company", CvPage::whereDidYouKnowAbout);
-        step("Type why i am interested in work in the company", CvPage::whyYouInterestedIn);
-        step("Type about myself", CvPage::aboutMyself);
-        step("Upload my CV", CvPage::uploadCV);
-        step("Type contact phone number", CvPage::typePhoneNumber);
-        step("Type contact phone number", CvPage::typeTelegramId);
-        step("Press agreement checkbox", CvPage::pressAgreementCheckbox);
-        step("Check the company logo", MainPage::checkTheLogo);
-        step("Check the top menu", MainPage::checkTopMenu);
-        step("Check footer menu", MainPage::checkFooterMenu);
-        step("Submit and send the form", CvPage::submitTheForm);
-    }
-
+@Story("job.playrix.com API tests")
+public class APITests {
     @Test
     @Owner("BessudnovMaksim")
     @Tag("api")
-    @DisplayName("API sampling test: check the fields and error messages at page\"\"QA Engineer, Engine\"")
+    @DisplayName("API sample test: check the fields and error messages at page \"QA Engineer, Engine\"")
     void apiCarrierQAEngineerPageFieldsAndErrorMessagesTest() {
-        open();
         Specs.request
                 .when()
                 .get("/api/v1/index.php?vacancyFormBuilder/getList")
                 .then()
-                //.log().body()
                 // name, surname and error message fields check
                 .body("items[0].id", is(1056))
                 .body("items[0].name", is("Фамилия и имя"))
@@ -210,12 +131,11 @@ public class Tests extends TestBase {
     @Test
     @Owner("BessudnovMaksim")
     @Tag("api")
-    @DisplayName("API sampling test: check the fields at page\"\"History\"")
+    @DisplayName("API sample test: check the fields at page \"History\"")
     void apiHistoryPageFieldsTest() {
-        open();
         Specs.request
                 .when()
-                .get("https://playrix.com/api/v1/index.php?historyPage/getList")
+                .get("/api/v1/index.php?historyPage/getList")
                 .then()
                 // 2020
                 .body("items.2020.id[0]", is(1018))

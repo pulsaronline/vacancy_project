@@ -1,8 +1,9 @@
-package cloud.autotests.tests.cv.pages.ui;
+package ru.playrix.autotests.tests.pages.ui;
 
-import static cloud.autotests.tests.TestBase.BASEURL;
-import static cloud.autotests.tests.TestBase.checkLocale;
-import static cloud.autotests.tests.cv.pages.ui.MainPage.*;
+import ru.playrix.autotests.helpers.UIHelper;
+import com.codeborne.selenide.Selenide;
+import ru.playrix.autotests.tests.TestBase;
+
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -160,13 +161,13 @@ public class VacancyPage {
             footerFaqWorkOrganizePodcastValue = "Подкаст на тему удаленной работы с участием основателей компании";
 
     public static void openVacancyPage() {
-        open(BASEURL);
-        checkLocale();
+        Selenide.open(TestBase.BASEURL);
+        UIHelper.checkLocale();
 //        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo();
 //        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
 //        $(byText(headerVacanciesButtonSelector)).click();
-        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).hover();
-        $(byText(headerVacanciesSubMenuName)).click();
+        Selenide.$$(MainPage.headerMenuSelector).findBy(text(MainPage.headerCarrierMenuName)).hover();
+        $(byText(MainPage.headerVacanciesSubMenuName)).click();
     }
 
     public static void headerVacanciesCheck() {

@@ -1,15 +1,15 @@
-package cloud.autotests.filters;
+package ru.playrix.autotests.api;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 
-public class CustomLogFilter {
-
+public class LogFilter {
     private static final AllureRestAssured FILTER = new AllureRestAssured();
 
-    private CustomLogFilter() {
+    private static class InitLogFilter {
+        private static final LogFilter logFilter = new LogFilter();
     }
 
-    public static CustomLogFilter customLogFilter() {
+    public static LogFilter filters() {
         return InitLogFilter.logFilter;
     }
 
@@ -17,10 +17,5 @@ public class CustomLogFilter {
         FILTER.setRequestTemplate("request.ftl");
         FILTER.setResponseTemplate("response.ftl");
         return FILTER;
-
-    }
-
-    private static class InitLogFilter {
-        private static final CustomLogFilter logFilter = new CustomLogFilter();
     }
 }

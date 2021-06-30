@@ -1,14 +1,12 @@
-package cloud.autotests.tests.cv.pages.ui;
+package ru.playrix.autotests.tests.pages.ui;
 
+import ru.playrix.autotests.helpers.UIHelper;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.conditions.Text;
-import org.openqa.selenium.By;
+import com.codeborne.selenide.Selenide;
+import ru.playrix.autotests.tests.TestBase;
 
-import static cloud.autotests.tests.TestBase.BASEURL;
-import static cloud.autotests.tests.TestBase.checkLocale;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
@@ -75,8 +73,8 @@ public class MainPage {
             footerCopyrightValue = "© 2004—2021 Playrix";
 
     public static void openMainPage(){
-        open(BASEURL);
-        checkLocale();
+        Selenide.open(TestBase.BASEURL);
+        UIHelper.checkLocale();
     }
 
     public static void checkTheLogo() {

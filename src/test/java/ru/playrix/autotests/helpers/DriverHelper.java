@@ -1,8 +1,8 @@
-package cloud.autotests.helpers;
+package ru.playrix.autotests.helpers;
 
-import cloud.autotests.tests.cv.TestData;
+import ru.playrix.autotests.tests.TestData;
 import com.codeborne.selenide.Configuration;
-import cloud.autotests.config.DriverConfig;
+import ru.playrix.autotests.config.DriverConfig;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.chrome.ChromeOptions;

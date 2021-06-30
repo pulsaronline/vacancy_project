@@ -1,6 +1,6 @@
-package cloud.autotests.tests.cv;
+package ru.playrix.autotests.tests;
 
-import cloud.autotests.config.cv_config.TestDataConfig;
+import ru.playrix.autotests.config.TestDataConfig;
 import org.aeonbits.owner.ConfigFactory;
 
 public class TestData {
