@@ -34,7 +34,7 @@ public class CvPage {
             phoneNumberAttributeValue = "Телефон",
             telegramIdValue = "@mBessudnov",
             telegramIdAttributeValue = "Telegram",
-            uploadCVFileAttributeSelector = "name",
+            uploadCVFileAttributeSelector = "file",
             uploadCVFileAttributeValue = "file",
             filename = "CV_mBessudnov.pdf",
             agreementCheckboxSelector = ".check__box",
@@ -123,8 +123,9 @@ public class CvPage {
     }
 
     public static void uploadCV(){
-        $(byAttribute(uploadCVFileAttributeSelector, uploadCVFileAttributeValue))
-                .uploadFromClasspath("cv/" + filename);
+        $(byName(uploadCVFileAttributeSelector)).uploadFromClasspath("cv/" + filename);
+//        $(byAttribute(uploadCVFileAttributeSelector, uploadCVFileAttributeValue))
+//                .uploadFromClasspath("cv/" + filename);
     }
 
     public static void submitTheForm(){
