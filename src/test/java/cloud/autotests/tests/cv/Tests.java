@@ -17,6 +17,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import static cloud.autotests.tests.cv.TestData.getApiUrl;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
+import static io.restassured.RestAssured.given;
+import static io.restassured.http.ContentType.JSON;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -94,7 +96,6 @@ public class Tests extends TestBase {
     void apiCarrierQAEngineerPageFieldsAndErrorMessagesTest() {
         open();
         Specs.request
-                .log().uri()
                 .when()
                 .get("/api/v1/index.php?vacancyFormBuilder/getList")
                 .then()
@@ -211,7 +212,7 @@ public class Tests extends TestBase {
     @Tag("api")
     @DisplayName("API sampling test: check the fields at page\"\"History\"")
     void apiHistoryPageFieldsTest() {
-        //open();
+        open();
         Specs.request
                 .when()
                 .get("https://playrix.com/api/v1/index.php?historyPage/getList")
