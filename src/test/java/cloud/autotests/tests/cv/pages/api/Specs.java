@@ -12,7 +12,7 @@ public class Specs {
     public static RequestSpecification request = with()
             .baseUri("https://playrix.com")
             //.basePath("/games")
-            .filter(customLogFilter().withCustomTemplates())
+            //.filter(customLogFilter().withCustomTemplates())
             .log().all()
             .contentType(ContentType.JSON);
 
