@@ -1,5 +1,7 @@
 package cloud.autotests.tests.cv.pages.ui;
 
+import java.io.File;
+
 import static cloud.autotests.tests.TestBase.BASEURL;
 import static cloud.autotests.tests.TestBase.checkLocale;
 import static com.codeborne.selenide.Condition.*;
@@ -123,7 +125,8 @@ public class CvPage {
     }
 
     public static void uploadCV(){
-        $(byName(uploadCVFileAttributeSelector)).uploadFromClasspath("cv/" + filename);
+        File file = new File("/Users/user/IdeaProjects/vacancy_project/src/test/resources/cv/" + filename);
+        $(byName(uploadCVFileAttributeSelector)).uploadFile(file);
 //        $(byAttribute(uploadCVFileAttributeSelector, uploadCVFileAttributeValue))
 //                .uploadFromClasspath("cv/" + filename);
     }
