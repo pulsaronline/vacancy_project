@@ -17,10 +17,8 @@ import static com.codeborne.selenide.Selenide.sleep;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static io.qameta.allure.Allure.addAttachment;
 
-
 public class AttachmentsHelper {
     private static final Logger LOG = LoggerFactory.getLogger(AttachmentsHelper.class);
-
 
     @Attachment(value = "{attachName}", type = "text/plain")
     public static String attachAsText(String attachName, String message) {
