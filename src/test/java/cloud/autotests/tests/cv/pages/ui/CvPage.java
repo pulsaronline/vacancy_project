@@ -125,7 +125,7 @@ public class CvPage {
     }
 
     public static void uploadCV(){
-        File file = new File("https://github.com/pulsaronline/vacancy_project/blob/450dd870427abebabae6123ca32334bee5f5caa6/src/test/resources/cv/CV_mBessudnov.pdf");
+        File file = new File("/src/test/resources/cv/" + filename);
         $(byName(uploadCVFileAttributeSelector)).uploadFile(file);
 //        $(byAttribute(uploadCVFileAttributeSelector, uploadCVFileAttributeValue))
 //                .uploadFromClasspath("cv/" + filename);
