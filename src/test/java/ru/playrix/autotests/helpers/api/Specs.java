@@ -15,7 +15,6 @@ public class Specs {
             //.header("Language", "ru")
             .filter(CustomLogFilter.customLogFilter().withCustomTemplates())
             .log().all()
-            .given()
             .contentType(ContentType.JSON);
 
     public static ResponseSpecification responseSpec = new ResponseSpecBuilder()
