@@ -127,7 +127,7 @@ public class CvPage {
     public static void uploadCV(){
         //File file = new File("/src/test/resources/cv/" + filename);
         $(byName(uploadCVFileAttributeSelector)).uploadFromClasspath("cv/" + filename);;
-//        $(byAttribute(uploadCVFileAttributeSelector, uploadCVFileAttributeValue))
+////        $(byAttribute(uploadCVFileAttributeSelector, uploadCVFileAttributeValue))
 //                .uploadFromClasspath("cv/" + filename);
     }
 

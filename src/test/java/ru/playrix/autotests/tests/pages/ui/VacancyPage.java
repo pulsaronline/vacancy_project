@@ -16,6 +16,7 @@ public class VacancyPage {
             // header selectors
             headerVacanciesButtonSelector = "Вакансии",
             headerVacanciesTagSelector = ".tags-list",
+            headerCarrierMenuName = "Карьера",
             // body selectors
             bodyVacanciesTagSelector = ".jobs-card",
             // footer selectors
@@ -166,9 +167,9 @@ public class VacancyPage {
 //        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo();
 //        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
 //        $(byText(headerVacanciesButtonSelector)).click();
-        Selenide.$$(GamesPage.headerMenuSelector).findBy(text(GamesPage.headerCarrierMenuName)).scrollTo().hover();
+        Selenide.$$(GamesPage.headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().hover();
         sleep(1000);
-        $(byText(GamesPage.headerVacanciesSubMenuName)).click();
+        $(byText(headerVacanciesButtonSelector)).click();
     }
 
     public static void headerVacanciesCheck() {
