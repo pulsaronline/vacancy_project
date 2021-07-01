@@ -20,7 +20,7 @@ public class UITests extends TestBase {
     @Test
     @Owner("BessudnovMaksim")
     @Tag("ui")
-    @DisplayName("UI sampling test: Check items on the main page")
+    @DisplayName("UI sampling test: Check items on the \"Games page\"")
     void mainPageUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open main page", GamesPage::openMainPage);
@@ -38,7 +38,7 @@ public class UITests extends TestBase {
     @Test
     @Owner("BessudnovMaksim")
     @Tag("ui")
-    @DisplayName("UI sampling test: Check items on the vacancies page")
+    @DisplayName("UI sampling test: Check items on the \"Vacancies page\"")
     void vacancyPageUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open vacancy page", VacancyPage::openVacancyPage);
