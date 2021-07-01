@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import ru.playrix.autotests.helpers.DriverHelper;
 import ru.playrix.autotests.helpers.UIHelper;
 import ru.playrix.autotests.tests.pages.ui.CvPage;
-import ru.playrix.autotests.tests.pages.ui.MainPage;
+import ru.playrix.autotests.tests.pages.ui.GamesPage;
 import ru.playrix.autotests.tests.pages.ui.VacancyPage;
 
 import io.qameta.allure.Owner;
@@ -23,16 +23,16 @@ public class UITests extends TestBase {
     @DisplayName("UI sampling test: Check items on the main page")
     void mainPageUITest() {
         step("Init web driver", DriverHelper::configureDriver);
-        step("Open main page", MainPage::openMainPage);
+        step("Open main page", GamesPage::openMainPage);
         step("Accept cookies", UIHelper::acceptCookies);
-        step("Check company logo", MainPage::checkTheLogo);
-        step("Check top menu", MainPage::checkTopMenu);
-        step("Check top menu submenus", MainPage::checkTopMenuSubmenus);
-        step("Check header images", MainPage::checkHeaderImages);
-        step("Check games", MainPage::checkGames);
-        step("Check footer menu", MainPage::checkFooterMenu);
-        step("Check social buttons", MainPage::checkSocialButtons);
-        step("Check copyright", MainPage::checkCopyright);
+        step("Check company logo", GamesPage::checkTheLogo);
+        step("Check top menu", GamesPage::checkTopMenu);
+        step("Check top menu submenus", GamesPage::checkTopMenuSubmenus);
+        step("Check header images", GamesPage::checkHeaderImages);
+        step("Check games", GamesPage::checkGames);
+        step("Check footer menu", GamesPage::checkFooterMenu);
+        step("Check social buttons", GamesPage::checkSocialButtons);
+        step("Check copyright", GamesPage::checkCopyright);
     }
 
     @Test
@@ -43,9 +43,9 @@ public class UITests extends TestBase {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open vacancy page", VacancyPage::openVacancyPage);
         step("Accept cookies", UIHelper::acceptCookies);
-        step("Check company logo", MainPage::checkTheLogo);
-        step("Check top menu", MainPage::checkTopMenu);
-        step("Check footer menu", MainPage::checkFooterMenu);
+        step("Check company logo", GamesPage::checkTheLogo);
+        step("Check top menu", GamesPage::checkTopMenu);
+        step("Check footer menu", GamesPage::checkFooterMenu);
         step("Check header vacancies menu", VacancyPage::headerVacanciesCheck);
         step("Check body tags of the vacancies", VacancyPage::bodyVacanciesTagCheck);
         step("Check body names of the vacancies", VacancyPage::bodyVacanciesNamesCheck);
@@ -74,9 +74,9 @@ public class UITests extends TestBase {
         step("Type contact phone number", CvPage::typePhoneNumber);
         step("Type contact phone number", CvPage::typeTelegramId);
         step("Press agreement checkbox", CvPage::pressAgreementCheckbox);
-        step("Check the company logo", MainPage::checkTheLogo);
-        step("Check the top menu", MainPage::checkTopMenu);
-        step("Check footer menu", MainPage::checkFooterMenu);
+        step("Check the company logo", GamesPage::checkTheLogo);
+        step("Check the top menu", GamesPage::checkTopMenu);
+        step("Check footer menu", GamesPage::checkFooterMenu);
         step("Submit and send the form", CvPage::submitTheForm);
     }
 }

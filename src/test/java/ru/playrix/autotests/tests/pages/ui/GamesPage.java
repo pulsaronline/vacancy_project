@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class MainPage {
+public class GamesPage {
     public static String
             //header menu locators and values
             headerGamesMenuName = "Игры",
