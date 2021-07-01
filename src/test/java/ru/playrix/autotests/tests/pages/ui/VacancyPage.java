@@ -166,7 +166,7 @@ public class VacancyPage {
 //        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo();
 //        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
 //        $(byText(headerVacanciesButtonSelector)).click();
-        Selenide.$$(GamesPage.headerMenuSelector).findBy(text(GamesPage.headerCarrierMenuName)).hover();
+        Selenide.$$(GamesPage.headerMenuSelector).findBy(text(GamesPage.headerCarrierMenuName)).scrollTo().hover();
         sleep(1000);
         $(byText(GamesPage.headerVacanciesSubMenuName)).click();
     }
