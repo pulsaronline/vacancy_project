@@ -168,7 +168,7 @@ public class VacancyPage {
 //        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo();
 //        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
 //        $(byText(headerVacanciesButtonSelector)).click();
-        $$(GamesPage.headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().click();
+        $$(GamesPage.headerMenuSelector).findBy(text(headerCarrierMenuName)).hover().click();
         $(byText(headerVacanciesButtonSelector)).click();
     }
 
