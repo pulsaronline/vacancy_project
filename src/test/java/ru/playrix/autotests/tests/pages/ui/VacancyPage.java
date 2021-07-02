@@ -169,7 +169,7 @@ public class VacancyPage {
         open(TestBase.BASEURL);
         UIHelper.checkLocale();
         UIHelper.acceptCookies();
-        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().click();
+        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().hover().click();
         $(By.linkText("Вакансии")).click();
 //        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().click();
 //        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
