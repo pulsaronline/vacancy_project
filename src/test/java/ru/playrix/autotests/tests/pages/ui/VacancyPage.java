@@ -1,5 +1,7 @@
 package ru.playrix.autotests.tests.pages.ui;
 
+import com.codeborne.selenide.selector.ByText;
+import org.openqa.selenium.By;
 import ru.playrix.autotests.helpers.UIHelper;
 import com.codeborne.selenide.Selenide;
 import ru.playrix.autotests.tests.TestBase;
@@ -168,11 +170,13 @@ public class VacancyPage {
         UIHelper.checkLocale();
         UIHelper.acceptCookies();
         $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().click();
-        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
-        $(byText(headerVacanciesButtonSelector)).hover();
+        $(By.linkText("Вакансии")).click();
+//        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().click();
+//        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
+//        $(byText(headerVacanciesButtonSelector)).hover();
 //        $(".main-menu__link.main-menu__link--parent").scrollTo().hover();
 //        $$(".main-menu__link.main-menu__link--parent").findBy(text(headerCarrierMenuName)).click();
-        $(byText(headerVacanciesButtonSelector)).click();
+//        $(byText(headerVacanciesButtonSelector)).click();
     }
 
     public static void headerVacanciesCheck() {
