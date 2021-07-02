@@ -75,6 +75,7 @@ public class GamesPage {
     public static void openMainPage(){
         Selenide.open(TestBase.BASEURL);
         UIHelper.checkLocale();
+        UIHelper.acceptCookies();
     }
 
     public static void checkTheLogo() {

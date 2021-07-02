@@ -51,6 +51,7 @@ public class CvPage {
         //open("https://job.playrix.com/");
         Selenide.open(TestBase.BASEURL);
         UIHelper.checkLocale();
+        UIHelper.acceptCookies();
         $(byText("Карьера")).click();
         sleep(300);
         $(byText("Вакансии")).click();

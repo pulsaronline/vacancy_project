@@ -164,6 +164,7 @@ public class VacancyPage {
     public static void openVacancyPage() {
         Selenide.open(TestBase.BASEURL);
         UIHelper.checkLocale();
+        UIHelper.acceptCookies();
 //        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo();
 //        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
 //        $(byText(headerVacanciesButtonSelector)).click();
