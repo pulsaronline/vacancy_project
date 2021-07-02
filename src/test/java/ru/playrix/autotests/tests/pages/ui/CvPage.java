@@ -36,6 +36,7 @@ public class CvPage {
             phoneNumberAttributeValue = "Телефон",
             telegramIdValue = "@mBessudnov",
             telegramIdAttributeValue = "Telegram",
+            uploadCVFileTextSelector = "Прикрепить сопроводительное письмо, резюме, портфолио (до 10 МБ)",
             uploadCVFileAttributeSelector = "file",
             uploadCVFileAttributeValue = "file",
             filename = "CV_mBessudnov.pdf",
@@ -127,7 +128,12 @@ public class CvPage {
 
     public static void uploadCV(){
         //File file = new File("/src/test/resources/cv/" + filename);
+        $(byText(uploadCVFileTextSelector)).shouldBe(visible);
         $(byName(uploadCVFileAttributeSelector)).uploadFromClasspath("cv/" + filename);
+        //$(byName(uploadCVFileAttributeSelector)).click();
+        //$(byName(uploadCVFileAttributeSelector)).uploadFromClasspath("cv/" + filename);
+
+        //$(byName(uploadCVFileAttributeSelector)).uploadFromClasspath("cv/" + filename);
 ////        $(byAttribute(uploadCVFileAttributeSelector, uploadCVFileAttributeValue))
 //                .uploadFromClasspath("cv/" + filename);
     }
