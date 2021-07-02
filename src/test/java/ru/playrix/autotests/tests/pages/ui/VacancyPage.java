@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$$;
+import static ru.playrix.autotests.tests.pages.ui.GamesPage.*;
 
 public class VacancyPage {
     static String
@@ -16,6 +17,7 @@ public class VacancyPage {
             // header selectors
             headerVacanciesButtonSelector = "Вакансии",
             headerVacanciesTagSelector = ".tags-list",
+            headerVacanciesSelector = ".main-menu__sub-item.main-menu__sub-item--active",
             headerCarrierMenuName = "Карьера",
             // body selectors
             bodyVacanciesTagSelector = ".jobs-card",
@@ -165,10 +167,11 @@ public class VacancyPage {
         open(TestBase.BASEURL);
         UIHelper.checkLocale();
         UIHelper.acceptCookies();
-//        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo();
-//        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
-//        $(byText(headerVacanciesButtonSelector)).click();
-        $$(GamesPage.headerMenuSelector).findBy(text(headerCarrierMenuName)).hover().click();
+        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().click();
+        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
+        $(byText(headerVacanciesButtonSelector)).hover();
+//        $(".main-menu__link.main-menu__link--parent").scrollTo().hover();
+//        $$(".main-menu__link.main-menu__link--parent").findBy(text(headerCarrierMenuName)).click();
         $(byText(headerVacanciesButtonSelector)).click();
     }
 
