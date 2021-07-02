@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 public class CvPage {
-    static String
+    public static String
             respondButtonSelector = "QA Engineer, Engine",
             firstNameValue = "Бессуднов Максим",
             attributeSelector = "placeholder",

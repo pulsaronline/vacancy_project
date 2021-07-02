@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.$$;
 import static ru.playrix.autotests.tests.pages.ui.GamesPage.*;
 
 public class VacancyPage {
-    static String
+    public static String
             vacancyPageUrl = "https://playrix.com/job/open",
             // SELECTORS
             // header selectors
