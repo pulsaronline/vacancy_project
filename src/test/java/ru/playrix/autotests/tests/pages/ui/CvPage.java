@@ -36,12 +36,10 @@ public class CvPage {
             phoneNumberAttributeValue = "Телефон",
             telegramIdValue = "@mBessudnov",
             telegramIdAttributeValue = "Telegram",
-            uploadCVFileTextSelector = "Прикрепить сопроводительное письмо, резюме, портфолио (до 10 МБ)",
+            uploadCVFileTextValue = "Прикрепить сопроводительное письмо, резюме, портфолио (до 10 МБ)",
             uploadCVFileAttributeSelector = "file",
-            uploadCVFileAttributeValue = "file",
             filename = "CV_mBessudnov.pdf",
             agreementCheckboxSelector = ".check__box",
-            submitButtonSelector = ".all-jobs-form__button",
             aboutMyselfValue = "Здравствуйте!\nДля отправки Вам своего CV я использовал:\n" +
                     "IDE - Intellij idea community 2020.3\n"+
                     "Стек - Java8, Junit5, Selenide(UI тест), REST Assured(API тест)\n"+
@@ -127,15 +125,8 @@ public class CvPage {
     }
 
     public static void uploadCV(){
-        //File file = new File("/src/test/resources/cv/" + filename);
-        $(byText(uploadCVFileTextSelector)).shouldBe(visible);
+        $(byText(uploadCVFileTextValue)).shouldBe(visible);
         $(byName(uploadCVFileAttributeSelector)).uploadFromClasspath("cv/" + filename);
-        //$(byName(uploadCVFileAttributeSelector)).click();
-        //$(byName(uploadCVFileAttributeSelector)).uploadFromClasspath("cv/" + filename);
-
-        //$(byName(uploadCVFileAttributeSelector)).uploadFromClasspath("cv/" + filename);
-////        $(byAttribute(uploadCVFileAttributeSelector, uploadCVFileAttributeValue))
-//                .uploadFromClasspath("cv/" + filename);
     }
 
     public static void submitTheForm(){
