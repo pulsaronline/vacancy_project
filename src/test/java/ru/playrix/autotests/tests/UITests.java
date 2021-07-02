@@ -24,7 +24,6 @@ public class UITests extends TestBase {
     void mainPageUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open main page", GamesPage::openMainPage);
-        //step("Accept cookies", UIHelper::acceptCookies);
         step("Check company logo", GamesPage::checkTheLogo);
         step("Check top menu", GamesPage::checkTopMenu);
         step("Check top menu submenus", GamesPage::checkTopMenuSubmenus);
@@ -42,7 +41,6 @@ public class UITests extends TestBase {
     void vacancyPageUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open vacancy page", VacancyPage::openVacancyPage);
-        //step("Accept cookies", UIHelper::acceptCookies);
         step("Check company logo", GamesPage::checkTheLogo);
         step("Check top menu", GamesPage::checkTopMenu);
         step("Check footer menu", GamesPage::checkFooterMenu);
@@ -59,7 +57,6 @@ public class UITests extends TestBase {
     void cvPageFillAndCheckUITest() {
         step("Init web driver", DriverHelper::configureDriver);
         step("Open target page", CvPage::openCvPage);
-        //step("Accept cookies", UIHelper::acceptCookies);
         step("Open the form", CvPage::openPageForm);
         step("Type First and Last names", CvPage::typeName);
         step("Type email", CvPage::typeEmail);
