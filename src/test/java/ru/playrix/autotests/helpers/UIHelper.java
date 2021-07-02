@@ -14,7 +14,7 @@ public class UIHelper {
     }
 
     public static void acceptCookies(){
-        $(".popup-cookies__btn.btn.btn--green").scrollTo().shouldHave(text("Принять"));
+        $(".popup-cookies__btn.btn.btn--green").shouldHave(text("Принять"));
             $(byText("Принять")).click();
         //$$(".popup-cookies__btn.btn.btn--green").findBy(text("Принять")).click();
     }
