@@ -170,6 +170,7 @@ public class VacancyPage {
         UIHelper.checkLocale();
         UIHelper.acceptCookies();
         $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().hover().click();
+        $(By.linkText(headerCarrierMenuName)).click();
         $(By.linkText("Вакансии")).click();
 //        $$(headerMenuSelector).findBy(text(headerCarrierMenuName)).scrollTo().click();
 //        $$(headerSubmenuSelector).findBy(text(headerVacanciesSubMenuName)).should(exist);
