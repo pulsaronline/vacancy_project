@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.playrix.autotests.helpers.api.Specs;
 
+import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.is;
 
@@ -17,7 +18,7 @@ public class APITests {
     @Tag("api")
     @DisplayName("API sample test: check the fields and error messages at page \"QA Engineer, Engine\"")
     void apiCarrierQAEngineerPageFieldsAndErrorMessagesTest() {
-        Specs.request
+        given().spec(Specs.request)
                 .when()
                 .get("/api/v1/index.php?vacancyFormBuilder/getList")
                 .then()
@@ -133,7 +134,7 @@ public class APITests {
     @Tag("api")
     @DisplayName("API sample test: check the fields at page \"History\"")
     void apiHistoryPageFieldsTest() {
-        Specs.request
+        given().spec(Specs.request)
                 .when()
                 .get("/api/v1/index.php?historyPage/getList")
                 .then()
